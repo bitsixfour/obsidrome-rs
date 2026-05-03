@@ -11,19 +11,17 @@ use anyhow::{Context, Result, anyhow};
 
 pub fn import_csv(conn: &mut Connection) -> Result<()> {
     conn.execute_batch(
-        "
-        CREATE TABLE IF NOT EXISTS tracks (
+        "CREATE TABLE IF NOT EXISTS tracks (
             id        INTEGER PRIMARY KEY AUTOINCREMENT,
             artist    TEXT NOT NULL,
-            year      INTEGER NOT NULL,
-            title     TEXT NOT NULL,
+            song     TEXT NOT NULL,
+            album     TEXT NOT NULL,
             played_at TEXT NOT NULL
-        );
-        ",
+        ) STRICT",
     )?;
 
     let mut stmt = conn.prepare(
-        "INSERT INTO tracks (artist, year, title, played_at) VALUES (?1, ?2, ?3, ?4)",
+        "INSERT INTO tracks (artist, song, album, played_at) VALUES (?1, ?2, ?3, ?4)",
     )?;
 
     let mut rdr = ReaderBuilder::new()
@@ -34,18 +32,14 @@ pub fn import_csv(conn: &mut Connection) -> Result<()> {
 
     for result in rdr.records() {
         let record = result?;
-
+        println!("add data entry");
         let artist = record.get(0).ok_or_else(|| anyhow!("missing artist"))?;
-        let year: i32 = record
-            .get(1)
-            .ok_or_else(|| anyhow!("missing year"))?
-            .parse()?;
-        let title = record.get(2).ok_or_else(|| anyhow!("missing title"))?;
-        let played_at = record
-            .get(3)
+        let song = record.get(1).ok_or_else(|| anyhow!("missing name"))?;
+        let album = record.get(2).ok_or_else(|| anyhow!("missing title"))?;
+        let played_at = record.get(3)
             .ok_or_else(|| anyhow!("missing played_at"))?;
 
-        stmt.execute(params![artist, year, title, played_at])?;
+        stmt.execute(params![artist, song, album, played_at])?;
     }
 
     conn.execute("COMMIT", [])?;
