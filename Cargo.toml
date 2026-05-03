@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.102"
 csv = "1.4.0"
-rusqlite = "0.39.0"
+rusqlite = { version = "0.39.0", features = ["bundled"] }
 serde = "1.0.228"
 time = "0.3.47"
 tokio = { version = "1", features = ["full"] }
