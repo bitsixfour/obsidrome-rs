@@ -32,15 +32,14 @@ struct Tag {
 }
 
 #[tokio::main]
-async fn main(stats: &AlbumStats) -> Result<Vec<String>, Box<dyn std::error::Error>> {
+async fn main(stats: &AlbumStats) -> Result<Option<Vec<Genre>>, Box<dyn std::error::Error>> {
     let client = Client::new();
-
-    let search: ReleaseSearch = client.get("https://musicbrainz.org/ws/2/release/").query(&[("query", "release:OK Computer AND artist:Radiohead"),
+    let mut genres: Vec<String> = Vec::new();
+    let search: ReleaseSearch = client.get("https://musicbrainz.org/ws/2/release/").query(&[("query", "release:{} AND artist:{}", &stats.album, &stats.album ),
               ("fmt", "json"),]).header("User-Agent", "your-app/0.1.0 (you@example.com)")
           .send().await?.json().await?;
 
     let release_id = &search.releases[0].id;
-
     let detail: ReleaseDetail = client
         .get(format!("https://musicbrainz.org/ws/2/release/{}", release_id))
         .query(&[
@@ -49,6 +48,8 @@ async fn main(stats: &AlbumStats) -> Result<Vec<String>, Box<dyn std::error::Err
         ]).header("User-Agent", "your-app/0.1.0 (you@example.com)")
         .send().await?
         .json().await?;
-
-
-  }
+    detail
+        .ReleaseDetail
+        .name
+        .iter()
+}

@@ -106,9 +106,9 @@ fn sanitize_path_component(value: &str) -> String {
     value.replace('/', "-")
 }
 
-struct AlbumStats {
-    artist: String,
-    album: String,
+pub struct AlbumStats {
+    pub artist: String,
+    pub album: String,
     scrobble_count: usize,
     last_song: String,
     last_played_at: String,
