@@ -7,7 +7,8 @@ edition = "2024"
 anyhow = "1.0.102"
 csv = "1.4.0"
 reader = "0.1.4"
+reqwest = { version = "0.11", default-features = false, features = ["json", "rustls-tls"] }
 rusqlite = { version = "0.39.0", features = ["bundled"] }
-serde = "1.0.228"
+serde = { version = "1.0.228", features = ["derive"] }
 time = "0.3.47"
 tokio = { version = "1", features = ["full"] }

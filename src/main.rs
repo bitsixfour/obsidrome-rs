@@ -12,6 +12,6 @@ async fn main() -> Result<()> {
     // sql::import_csv(&mut conn);
 
     let mut album = ::csv::Reader::from_path("data.csv")?;
-    csv::csv_md(&mut album)?;
+    csv::csv_md(&mut album).await?;
     Ok(())
 }

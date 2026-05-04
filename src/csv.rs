@@ -2,14 +2,17 @@ use anyhow::{anyhow, Result};
 use csv::Reader;
 use csv::StringRecord;
 use std::collections::HashMap;
+use serde::Deserialize;
 use std::fs::File;
 use std::io::prelude::*;
 use std::io::Read;
 use std::path::{Path, PathBuf};
+use reqwest::Client;
+
 
 const VAULT_ROOT: &str = "/home/will/Documents/Obsidian Vault";
 
-pub fn csv_md<R: Read>(album: &mut Reader<R>) -> Result<()> {
+pub async fn csv_md<R: Read>(album: &mut Reader<R>) -> Result<()> {
     let mut album_stats: HashMap<(String, String), AlbumStats> = HashMap::new();
     let mut artist_stats: HashMap<String, ArtistStats> = HashMap::new();
 
@@ -49,6 +52,7 @@ pub fn csv_md<R: Read>(album: &mut Reader<R>) -> Result<()> {
 
     for stats in album_stats.values() {
         write_album_md(stats)?;
+        write_genre_md(stats);
     }
 
     Ok(())
@@ -77,6 +81,7 @@ fn write_album_md(stats: &AlbumStats) -> Result<()> {
     let album_path = Path::new(VAULT_ROOT).join("album").join(album_file);
 
     ensure_parent_dir(&album_path)?;
+    let genres = write_genres_md(&stats).unwrap_or_default();
 
     let mut album_note = File::create(album_path)?;
     writeln!(album_note, "# {}", stats.album)?;
@@ -86,6 +91,7 @@ fn write_album_md(stats: &AlbumStats) -> Result<()> {
     writeln!(album_note, "- scrobble_count: {}", stats.scrobble_count)?;
     writeln!(album_note, "- last_song: {}", stats.last_song)?;
     writeln!(album_note, "- played_at: {}", stats.last_played_at)?;
+    writeln!(album_note, "genres: {}" genres);
     Ok(())
 }
 
@@ -146,4 +152,68 @@ impl ArtistStats {
             albums: HashMap::new(),
         }
     }
+}
+#[derive(Debug, Deserialize)]
+struct ReleaseSearch {
+    releases: Vec<Release>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Release {
+    id: String,
+    title: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct ReleaseDetail {
+    genres: Option<Vec<Genre>>,
+    tags: Option<Vec<Tag>>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Genre {
+    name: String,
+    count: Option<u32>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Tag {
+    name: String,
+    count: Option<u32>,
+}
+
+async fn write_genre_md(stats: &AlbumStats) -> Result<Option<Vec<Genre>>, Box<dyn std::error::Error>> {
+    let client = Client::new();
+    let query = format!("release:{} AND artist:{}", stats.album, stats.artist);
+
+    let search: ReleaseSearch = client
+        .get("https://musicbrainz.org/ws/2/release/")
+        .query(&[
+            ("query", query.as_str()),
+            ("fmt", "json"),
+        ])
+        .header("User-Agent", "your-app/0.1.0 (you@example.com)")
+        .send()
+        .await?
+        .json::<ReleaseSearch>()
+        .await?;
+
+    let release_id = match search.releases.first() {
+        Some(release) => &release.id,
+        None => return Ok(None),
+    };
+
+    let detail: ReleaseDetail = client
+        .get(format!("https://musicbrainz.org/ws/2/release/{}", release_id))
+        .query(&[
+            ("inc", "genres+tags"),
+            ("fmt", "json"),
+        ])
+        .header("User-Agent", "your-app/0.1.0 (you@example.com)")
+        .send()
+        .await?
+        .json::<ReleaseDetail>()
+        .await?;
+
+    Ok(detail.genres)
 }
