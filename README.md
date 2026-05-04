@@ -4,7 +4,8 @@
 ## Navidrome/Last.fm -> Obsidian
 * Need to add similar artists/movements
 * Currently aiming towards indexing monthly listening patterns (picrel is monthly)
-* Somewhat of a POC: still trying to make it actually useful instead of just "ooh i need my links"
+* Still Somewhat of a POC: still trying to make it actually useful as a tool instead of just "ooh i need my links." You could probably deploy Quartz with this instead of shilling a last.fm page?
 
 ##### todo
-* cli to deploy it into a vault (last option)
+* cli to deploy it into a vault (trying to get it to be more mature before its "usable")
+* Access MusicBrainz for genres (they're good enough imo)
