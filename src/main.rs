@@ -7,8 +7,7 @@ mod sql;
 #[tokio::main]
 async fn main() -> Result<()> {
     /* may be depricated */
-    println!("Importing CSV data... \n
-        I read /obsidianfm/data/*");
+    println!("Importing CSV data");
     let mut _conn = Connection::open("data.db")?;
     // sql::import_csv(&mut conn);
 
