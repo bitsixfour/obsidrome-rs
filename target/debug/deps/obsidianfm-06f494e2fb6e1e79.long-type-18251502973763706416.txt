@@ -1,1 +1,0 @@
-&dyn Future<Output = Result<std::option::Option<Vec<Genre>>, Box<dyn StdError>>>
