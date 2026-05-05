@@ -10,46 +10,64 @@ use anyhow::{Context, Result};
 use chrono::Local;
 use reqwest::blocking::Client;
 use serde::Deserialize;
+use csv::Writer;
+
 
 const USR: &str = "nix";
 const PAS: &str = "a2phaHNkZ";
 /* Navidrome is read only so plaintext is ok. If you care about security you wouldn't be PFing Navidrome anyways lol. */
-#[derive(Deserialize)]
-struct SubsonicResponse {
+
+use serde::Deserialize;
+
+
+
+#[derive(Debug, Deserialize)]
+struct Navidrome {
     #[serde(rename = "subsonic-response")]
-    inner: SubsonicInner,
+    subsonic_response: SubsonicResponse,
 }
 
-#[derive(Deserialize)]
-struct SubsonicInner {
+#[derive(Debug, Deserialize)]
+struct SubsonicResponse {
     #[serde(rename = "nowPlaying")]
-    now_playing: Option<NowPlaying>,
+    now_playing: NowPlaying,
 }
 
-#[derive(Deserialize)]
+#[derive(Debug, Deserialize)]
 struct NowPlaying {
-    entry: Option<Vec<Entry>>,
+    entry: Vec<Entry>,
 }
 
-#[derive(Deserialize)]
+#[derive(Debug, Deserialize)]
 struct Entry {
     id: String,
+    #[serde(rename = "played")]
+    scrobble_time: String,
     title: String,
     album: String,
-    #[serde(rename = "displayArtist")]
-    display_artist: String,
-    year: Option<u32>,
-    #[serde(rename = "minutesAgo")]
-    minutes_ago: u64,
+    artist: String,
 }
 
 
-#[test]
-pub async fn call_api() -> Result<SubsonicResponse, anyhow::Error {
-    let url: &str = format!("http://192.168.1.20:8097/rest/getNowPlaying?u={}&p={}&v=1.16.1&c=myclient&f=json", USR, PAS);
-    let req = reqwest::get(url)
-        .await?
-        .text()
-        .await?;
-    Ok(resp)
+impl Navidrome {
+    pub fn new() -> Result<SubsonicResponse, anyhow::Error> {
+        let url: &str = format!("http://192.168.1.20:8097/rest/getNowPlaying?u={}&p={}&v=1.16.1&c=myclient&f=json", USR, PAS);
+        println!("hecking scrobble.....");
+        let req: SubsonicResponse = reqwest::get(url)
+            .await?
+            .json::<SubsonicResponse>()
+            .await?;
+        Ok(req)
+    }
+    pub fn check_dup(&self) -> boolean {
+        let mut rdr = csv::Reader::from_reader("data.csv");
+        for result in rsr.records().take(5) {
+            let record = result.
+
+
+        }
+
+    }
+
+
 }
