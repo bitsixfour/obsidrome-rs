@@ -250,10 +250,10 @@ fn render_artist_note(stats: &ArtistStats) -> String {
     writeln!(&mut body, "# {}", stats.artist).unwrap();
     writeln!(&mut body).unwrap();
     writeln!(&mut body, "- artist: {}", stats.artist).unwrap();
-    writeln!(&mut body, "- scrobble_count: {}", stats.scrobble_count).unwrap();
+    writeln!(&mut body, "- scrobble count: {}", stats.scrobble_count).unwrap();
     writeln!(&mut body, "- album_count: {}", stats.albums.len()).unwrap();
-    writeln!(&mut body, "- latest_album: [[{}]]", stats.last_album).unwrap();
-    writeln!(&mut body, "- last_song: {}", stats.last_song).unwrap();
+    writeln!(&mut body, "- latest album: [[{}]]", stats.last_album).unwrap();
+    writeln!(&mut body, "- last song: {}", stats.last_song).unwrap();
     writeln!(&mut body, "- played_at: {}", stats.last_played_at).unwrap();
     body
 }
@@ -271,8 +271,8 @@ fn render_album_note(stats: &AlbumStats, metadata: &AlbumMetadata) -> String {
     writeln!(&mut body, "- artist: [[{}]]", stats.artist).unwrap();
     writeln!(&mut body, "- album: {}", stats.album).unwrap();
     writeln!(&mut body, "- scrobble_count: {}", stats.scrobble_count).unwrap();
-    writeln!(&mut body, "- last_song: {}", stats.last_song).unwrap();
-    writeln!(&mut body, "- played_at: {}", stats.last_played_at).unwrap();
+    writeln!(&mut body, "- last song: {}", stats.last_song).unwrap();
+    writeln!(&mut body, "- played at: {}", stats.last_played_at).unwrap();
     writeln!(&mut body, "- genres: {}", format_genre_links(&metadata.genres)).unwrap();
 
     if let Some(release_url) = metadata.release_url.as_deref() {
