@@ -23,7 +23,6 @@ pub struct Navidrome {
 
 #[derive(Debug, Deserialize)]
 pub struct SubsonicResponse {
-    #[serde(rename = "nowPlaying")]
     now_playing: NowPlaying,
 }
 
@@ -44,22 +43,20 @@ struct Entry {
 
 
 
-struct ScnrData {
-    name: String,
-    song: String,
-    artist: String,
-    date: String,
+struct ScnrData<'a> {
+    pub name: &'a str,
+    pub song: &'a str,
+    pub artist: &'a str,
+    pub date: &'a str,
 }
-impl ScnrData {
-
-    pub fn new(rec: &StringRecord) -> Result<ScnrData> {
+impl<'a> ScnrData<'a>{
+    pub fn new(rec: &'a StringRecord) -> Result<ScnrData<'a>> {
         Ok(Self {
-            name: "Str".to_string(),
-            song: "str".to_string(),
-            artist: "str".to_string(),
-            date: "str".to_string(),
+            name:   rec.get(0).ok_or(anyhow::anyhow!("missing artist"))?,
+            song:   rec.get(2).ok_or(anyhow::anyhow!("missing song"))?,
+            artist: rec.get(1).ok_or(anyhow::anyhow!("missing album"))?,
+            date:   rec.get(3).ok_or(anyhow::anyhow!("missing date"))?,
         })
-
     }
 }
 
@@ -79,8 +76,11 @@ impl Navidrome {
 
         for result in rdr.records().take(5) {
             let record = result.expect("The Dismemberment Plan,Emergency & I,The City,02 May 2026 19:27");
-            println!("{record:?}");
             let compare =  ScnrData::new(&record);
+            let prev_recrd: (&str, &str) = match compare {
+                  Ok(okay) => (okay.name, okay.song),
+                  Err(_) => ("Emergency & I", "The City")
+            };
 
         }
 
