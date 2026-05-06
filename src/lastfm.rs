@@ -15,7 +15,12 @@ const USR: &str = "nix";
 const PAS: &str = "a2phaHNkZ";
 /* Navidrome is read only so plaintext is ok. If you care about security you wouldn't be PFing Navidrome anyways lol. */
 
-
+pub struct Data {
+    pub name: String,
+    pub song: String,
+    pub artist: String,
+    pub Time: String,
+}
 
 
 #[derive(Debug, Deserialize)]
@@ -33,16 +38,6 @@ pub struct SubsonicResponse {
 #[derive(Debug, Deserialize)]
 struct NowPlaying {
     entry: Vec<Entry>,
-}
-
-#[derive(Debug, Deserialize)]
-struct Entry {
-    id: String,
-    #[serde(rename = "played")]
-    scrobble_time: String,
-    title: String,
-    album: String,
-    artist: String,
 }
 
 
