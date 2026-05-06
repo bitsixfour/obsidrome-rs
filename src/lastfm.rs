@@ -25,7 +25,7 @@ pub struct Navidrome {
 }
 
 #[derive(Debug, Deserialize)]
-struct SubsonicResponse {
+pub struct SubsonicResponse {
     #[serde(rename = "nowPlaying")]
     now_playing: NowPlaying,
 }
