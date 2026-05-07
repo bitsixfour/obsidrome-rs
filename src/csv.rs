@@ -15,6 +15,13 @@ const VAULT_ROOT: &str = "/home/will/Documents/Obsidian Vault";
 const MUSICBRAINZ_USER_AGENT: &str = "obsidianfm/0.1.0 (https://wngyn.net)";
 const API_REQUEST_INTERVAL: Duration = Duration::from_secs(1);
 
+pub struct NewScrobble {
+    pub artist: String,
+    pub album: String,
+    pub song: String,
+    pub played_at: String,
+}
+
 pub async fn csv_md<R: Read>(reader: &mut Reader<R>) -> Result<()> {
     let library = collect_library_stats(reader)?;
     let writer = VaultWriter::new(PathBuf::from(VAULT_ROOT))?;
@@ -28,6 +35,43 @@ pub async fn csv_md<R: Read>(reader: &mut Reader<R>) -> Result<()> {
     }
 
     Ok(())
+}
+
+pub async fn sync_markdown_from_csv(csv_path: &str) -> Result<()> {
+    if !Path::new(csv_path).exists() {
+        return Ok(());
+    }
+
+    let mut reader = ::csv::ReaderBuilder::new()
+        .has_headers(false)
+        .from_path(csv_path)
+        .with_context(|| format!("failed to open {}", csv_path))?;
+    csv_md(&mut reader).await
+}
+
+pub fn append_scrobble(scrobble: &NewScrobble, csv_path: &str) -> Result<()> {
+    let file = std::fs::OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(csv_path)
+        .with_context(|| format!("failed to open {} for append", csv_path))?;
+
+    let mut writer = ::csv::Writer::from_writer(file);
+    writer
+        .write_record([
+            scrobble.artist.as_str(),
+            scrobble.album.as_str(),
+            scrobble.song.as_str(),
+            scrobble.played_at.as_str(),
+        ])
+        .with_context(|| format!("failed to append scrobble to {}", csv_path))?;
+    writer.flush()?;
+
+    Ok(())
+}
+
+pub async fn write_scrobble_markdown(csv_path: &str) -> Result<()> {
+    sync_markdown_from_csv(csv_path).await
 }
 
 fn collect_library_stats<R: Read>(reader: &mut Reader<R>) -> Result<LibraryStats> {

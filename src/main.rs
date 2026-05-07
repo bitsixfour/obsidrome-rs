@@ -1,17 +1,14 @@
 use anyhow::Result;
 
 mod csv;
-mod sql;
 mod lastfm;
-use lastfm::Navidrome;
+mod sql;
 
 #[tokio::main]
 async fn main() -> Result<()> {
     println!("Importing CSV data");
-    let mut album = ::csv::Reader::from_path("data.csv")?;
-    csv::csv_md(&mut album).await;
-    Navidrome::new();
+    csv::sync_markdown_from_csv("data.csv").await?;
+    lastfm::run().await?;
 
     Ok(())
-
 }
