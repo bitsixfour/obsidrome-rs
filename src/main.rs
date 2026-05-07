@@ -2,7 +2,6 @@ use anyhow::Result;
 
 mod csv;
 mod lastfm;
-mod sql;
 
 #[tokio::main]
 async fn main() -> Result<()> {
