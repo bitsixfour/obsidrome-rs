@@ -298,7 +298,7 @@ fn render_artist_note(stats: &ArtistStats) -> String {
     writeln!(&mut body, "- album_count: {}", stats.albums.len()).unwrap();
     writeln!(&mut body, "- latest album: [[{}]]", stats.last_album).unwrap();
     writeln!(&mut body, "- last song: {}", stats.last_song).unwrap();
-    writeln!(&mut body, "- played_at: {}", stats.last_played_at).unwrap();
+    writeln!(&mut body, "- first_played_at: {}", stats.last_played_at).unwrap();
     body
 }
 
