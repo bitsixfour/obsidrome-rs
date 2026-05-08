@@ -1,24 +1,16 @@
 <img width="1516" height="993" alt="image" src="https://github.com/user-attachments/assets/d49512be-b6d5-483e-bc8f-c9cec3ce004e" />
 
 
-## Navidrome/Last.fm -> Obsidian
-* Need to add similar artists/movements
-* Currently aiming towards indexing monthly listening patterns (picrel is monthly)
-* Still Somewhat of a POC: still trying to make it actually useful as a tool instead of just "ooh i need my links." You could probably deploy Quartz with this instead of shilling a last.fm page?
 
 ##### todo
 * cli to deploy it into a vault (trying to get it to be more mature before its "usable")
 * Access MusicBrainz for genres (they're good enough imo)
+* Need to add similar artists/movements
+* Currently aiming towards indexing monthly listening patterns (picrel is monthly)
+* Still Somewhat of a POC: still trying to make it actually useful as a tool instead of just "ooh i need my links." You could probably deploy Quartz with this instead of shilling a last.fm page?
+## Use
 
-## Flake
-
-This repo now exposes:
-
-* `packages.<system>.default`
-* `apps.<system>.default`
-* `devShells.<system>.default`
-* `nixosModules.default`
-
+I wrapped this using a Nix Flake cause my servers use NixOS and also it's easiest lol
 Example NixOS usage:
 
 ```nix
@@ -51,13 +43,4 @@ Example NixOS usage:
 }
 ```
 
-Runtime configuration is exposed through environment variables as well:
 
-* `OBSIDIANFM_CSV_PATH`
-* `OBSIDIANFM_VAULT_ROOT`
-* `OBSIDIANFM_NAVIDROME_BASE_URL`
-* `OBSIDIANFM_NAVIDROME_USER`
-* `OBSIDIANFM_NAVIDROME_PASSWORD`
-* `OBSIDIANFM_POLL_SECS`
-
-The service user needs write access to both the CSV path and the vault root.
