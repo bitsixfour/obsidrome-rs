@@ -72,12 +72,12 @@ in
         description = "Navidrome username.";
       };
 
-      passwordFile = lib.mkOption {
-        type = lib.types.nullOr lib.types.str;
-        default = null;
+      password = lib.mkOption {
+        type = lib.types.str;
+        default = "";
         description = ''
-          File containing the Navidrome password. When set, the service exposes
-          it to the binary through OBSIDIANFM_NAVIDROME_PASSWORD_FILE.
+          Navidrome password exposed directly as plain text through
+          OBSIDIANFM_NAVIDROME_PASSWORD.
         '';
       };
     };
@@ -108,9 +108,8 @@ in
         OBSIDIANFM_VAULT_ROOT = cfg.vaultRoot;
         OBSIDIANFM_NAVIDROME_BASE_URL = cfg.navidrome.baseUrl;
         OBSIDIANFM_NAVIDROME_USER = cfg.navidrome.user;
+        OBSIDIANFM_NAVIDROME_PASSWORD = cfg.navidrome.password;
         OBSIDIANFM_POLL_SECS = toString cfg.pollSeconds;
-      } // lib.optionalAttrs (cfg.navidrome.passwordFile != null) {
-        OBSIDIANFM_NAVIDROME_PASSWORD_FILE = "%d/navidrome-password";
       };
 
       serviceConfig =
@@ -126,9 +125,7 @@ in
         // lib.optionalAttrs (cfg.environmentFile != null) {
           EnvironmentFile = [ cfg.environmentFile ];
         }
-        // lib.optionalAttrs (cfg.navidrome.passwordFile != null) {
-          LoadCredential = [ "navidrome-password:${toString cfg.navidrome.passwordFile}" ];
-        };
+        ;
     };
   };
 }

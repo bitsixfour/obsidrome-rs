@@ -42,7 +42,7 @@ Example NixOS usage:
 
             navidrome.baseUrl = "http://127.0.0.1:4533";
             navidrome.user = "nix";
-            navidrome.passwordFile = "/run/secrets/navidrome-password";
+            navidrome.password = "your-password";
           };
         }
       ];
@@ -58,7 +58,6 @@ Runtime configuration is exposed through environment variables as well:
 * `OBSIDIANFM_NAVIDROME_BASE_URL`
 * `OBSIDIANFM_NAVIDROME_USER`
 * `OBSIDIANFM_NAVIDROME_PASSWORD`
-* `OBSIDIANFM_NAVIDROME_PASSWORD_FILE`
 * `OBSIDIANFM_POLL_SECS`
 
 The service user needs write access to both the CSV path and the vault root.

@@ -3,3 +3,5 @@ data.db
 data.csv
 /front/content/*
 /vault/*
+/target/
+/.codex/

@@ -1,5 +1,4 @@
 use std::env;
-use std::fs;
 use std::path::PathBuf;
 
 use anyhow::{Context, Result};
@@ -34,7 +33,8 @@ impl AppConfig {
                 .to_string(),
             navidrome_user: env_string("OBSIDIANFM_NAVIDROME_USER")
                 .unwrap_or_else(|| DEFAULT_NAVIDROME_USER.to_string()),
-            navidrome_password: read_navidrome_password()?,
+            navidrome_password: env_string("OBSIDIANFM_NAVIDROME_PASSWORD")
+                .unwrap_or_else(|| DEFAULT_NAVIDROME_PASSWORD.to_string()),
             poll_secs: env_u64("OBSIDIANFM_POLL_SECS")?.unwrap_or(DEFAULT_POLL_SECS),
         })
     }
@@ -56,18 +56,4 @@ fn env_u64(key: &str) -> Result<Option<u64>> {
             .map(Some),
         None => Ok(None),
     }
-}
-
-fn read_navidrome_password() -> Result<String> {
-    if let Some(password) = env_string("OBSIDIANFM_NAVIDROME_PASSWORD") {
-        return Ok(password);
-    }
-
-    if let Some(path) = env_path("OBSIDIANFM_NAVIDROME_PASSWORD_FILE") {
-        return fs::read_to_string(&path)
-            .with_context(|| format!("failed to read {}", path.display()))
-            .map(|password| password.trim().to_string());
-    }
-
-    Ok(DEFAULT_NAVIDROME_PASSWORD.to_string())
 }
