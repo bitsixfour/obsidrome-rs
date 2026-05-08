@@ -11,7 +11,6 @@ use std::path::{Path, PathBuf};
 use tokio::sync::Mutex;
 use tokio::time::{sleep, Duration, Instant};
 
-const VAULT_ROOT: &str = "/home/will/Documents/Obsidian Vault";
 const MUSICBRAINZ_USER_AGENT: &str = "obsidianfm/0.1.0 (https://wngyn.net)";
 const API_REQUEST_INTERVAL: Duration = Duration::from_secs(1);
 
@@ -22,9 +21,9 @@ pub struct NewScrobble {
     pub played_at: String,
 }
 
-pub async fn csv_md<R: Read>(reader: &mut Reader<R>) -> Result<()> {
+pub async fn csv_md<R: Read>(reader: &mut Reader<R>, vault_root: &Path) -> Result<()> {
     let library = collect_library_stats(reader)?;
-    let writer = VaultWriter::new(PathBuf::from(VAULT_ROOT))?;
+    let writer = VaultWriter::new(vault_root.to_path_buf())?;
 
     for stats in library.artist_stats.values() {
         writer.write_artist_note(stats)?;
@@ -37,24 +36,24 @@ pub async fn csv_md<R: Read>(reader: &mut Reader<R>) -> Result<()> {
     Ok(())
 }
 
-pub async fn sync_markdown_from_csv(csv_path: &str) -> Result<()> {
-    if !Path::new(csv_path).exists() {
+pub async fn sync_markdown_from_csv(csv_path: &Path, vault_root: &Path) -> Result<()> {
+    if !csv_path.exists() {
         return Ok(());
     }
 
     let mut reader = ::csv::ReaderBuilder::new()
         .has_headers(false)
         .from_path(csv_path)
-        .with_context(|| format!("failed to open {}", csv_path))?;
-    csv_md(&mut reader).await
+        .with_context(|| format!("failed to open {}", csv_path.display()))?;
+    csv_md(&mut reader, vault_root).await
 }
 
-pub fn append_scrobble(scrobble: &NewScrobble, csv_path: &str) -> Result<()> {
+pub fn append_scrobble(scrobble: &NewScrobble, csv_path: &Path) -> Result<()> {
     let file = std::fs::OpenOptions::new()
         .create(true)
         .append(true)
         .open(csv_path)
-        .with_context(|| format!("failed to open {} for append", csv_path))?;
+        .with_context(|| format!("failed to open {} for append", csv_path.display()))?;
 
     let mut writer = ::csv::Writer::from_writer(file);
     writer
@@ -64,14 +63,14 @@ pub fn append_scrobble(scrobble: &NewScrobble, csv_path: &str) -> Result<()> {
             scrobble.song.as_str(),
             scrobble.played_at.as_str(),
         ])
-        .with_context(|| format!("failed to append scrobble to {}", csv_path))?;
+        .with_context(|| format!("failed to append scrobble to {}", csv_path.display()))?;
     writer.flush()?;
 
     Ok(())
 }
 
-pub async fn write_scrobble_markdown(csv_path: &str) -> Result<()> {
-    sync_markdown_from_csv(csv_path).await
+pub async fn write_scrobble_markdown(csv_path: &Path, vault_root: &Path) -> Result<()> {
+    sync_markdown_from_csv(csv_path, vault_root).await
 }
 
 fn collect_library_stats<R: Read>(reader: &mut Reader<R>) -> Result<LibraryStats> {

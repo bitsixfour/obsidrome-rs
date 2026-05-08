@@ -1,6 +1,6 @@
-   0.077047277s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: stale: missing "/home/will/git/obsidianfm/target/debug/.fingerprint/httparse-1b9cdd965347005e/dep-lib-httparse"
-   0.079300463s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: fingerprint error for obsidianfm v0.1.0 (/home/will/git/obsidianfm)/Check { test: false }/TargetInner { name: "obsidianfm", doc: true, ..: with_path("/home/will/git/obsidianfm/src/main.rs", Edition2024) }
-   0.079327294s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/obsidianfm-79e26749af03450f/bin-obsidianfm`
+   0.070439155s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: stale: missing "/home/will/git/obsidianfm/target/debug/.fingerprint/powerfmt-508ad2610f69c509/dep-lib-powerfmt"
+   0.070584979s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: fingerprint error for obsidianfm v0.1.0 (/home/will/git/obsidianfm)/Check { test: false }/TargetInner { name: "obsidianfm", doc: true, ..: with_path("/home/will/git/obsidianfm/src/main.rs", Edition2024) }
+   0.070593415s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/obsidianfm-79e26749af03450f/bin-obsidianfm`
 
 Caused by:
     No such file or directory (os error 2)
@@ -25,8 +25,8 @@ Stack backtrace:
   16: __libc_start_call_main
   17: __libc_start_main_alias_2
   18: _start
-   0.083845688s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Check { test: false }/TargetInner { ..: lib_target("anyhow", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/src/lib.rs", Edition2021) }
-   0.083860596s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-8cfb22ac5ced42c9/lib-anyhow`
+   0.073932913s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Check { test: false }/TargetInner { ..: lib_target("anyhow", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/src/lib.rs", Edition2021) }
+   0.073942430s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="anyhow"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-8cfb22ac5ced42c9/lib-anyhow`
 
 Caused by:
     No such file or directory (os error 2)
@@ -52,8 +52,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.084072014s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
-   0.084078947s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-055b32226d340223/run-build-script-build-script-build`
+   0.074107370s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
+   0.074113572s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-055b32226d340223/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -81,8 +81,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.084144450s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
-   0.084148548s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-e1adff3d57743d37/build-script-build-script-build`
+   0.074172593s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for anyhow v1.0.102/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/anyhow-1.0.102/build.rs", Edition2021) }
+   0.074176601s  INFO prepare_target{force=false package_id=anyhow v1.0.102 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/anyhow-e1adff3d57743d37/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -110,8 +110,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.084252573s  INFO prepare_target{force=false package_id=csv v1.4.0 target="csv"}: cargo::core::compiler::fingerprint: fingerprint error for csv v1.4.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("csv", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/src/lib.rs", Edition2021) }
-   0.084258885s  INFO prepare_target{force=false package_id=csv v1.4.0 target="csv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/csv-bf48b95c1352d2e0/lib-csv`
+   0.074264756s  INFO prepare_target{force=false package_id=csv v1.4.0 target="csv"}: cargo::core::compiler::fingerprint: fingerprint error for csv v1.4.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("csv", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-1.4.0/src/lib.rs", Edition2021) }
+   0.074270377s  INFO prepare_target{force=false package_id=csv v1.4.0 target="csv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/csv-bf48b95c1352d2e0/lib-csv`
 
 Caused by:
     No such file or directory (os error 2)
@@ -137,8 +137,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.084412284s  INFO prepare_target{force=false package_id=csv-core v0.1.13 target="csv_core"}: cargo::core::compiler::fingerprint: fingerprint error for csv-core v0.1.13/Check { test: false }/TargetInner { benched: false, ..: lib_target("csv_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-core-0.1.13/src/lib.rs", Edition2018) }
-   0.084418265s  INFO prepare_target{force=false package_id=csv-core v0.1.13 target="csv_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/csv-core-abf063d531915d2e/lib-csv_core`
+   0.074417033s  INFO prepare_target{force=false package_id=csv-core v0.1.13 target="csv_core"}: cargo::core::compiler::fingerprint: fingerprint error for csv-core v0.1.13/Check { test: false }/TargetInner { benched: false, ..: lib_target("csv_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/csv-core-0.1.13/src/lib.rs", Edition2018) }
+   0.074423124s  INFO prepare_target{force=false package_id=csv-core v0.1.13 target="csv_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/csv-core-abf063d531915d2e/lib-csv_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -165,8 +165,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.084602211s  INFO prepare_target{force=false package_id=ryu v1.0.23 target="ryu"}: cargo::core::compiler::fingerprint: fingerprint error for ryu v1.0.23/Check { test: false }/TargetInner { ..: lib_target("ryu", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ryu-1.0.23/src/lib.rs", Edition2021) }
-   0.084609134s  INFO prepare_target{force=false package_id=ryu v1.0.23 target="ryu"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ryu-8408692487e7b5f2/lib-ryu`
+   0.074605417s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
+   0.074611528s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_core-1b3411e94af08e19/lib-serde_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -193,36 +193,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.084705485s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
-   0.084711045s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_core-1b3411e94af08e19/lib-serde_core`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   7: cargo::ops::cargo_compile::compile_ws
-   8: cargo::ops::cargo_compile::compile_with_exec
-   9: cargo::ops::cargo_compile::compile
-  10: cargo::commands::check::exec
-  11: <cargo::cli::Exec>::exec
-  12: cargo::cli::main
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: main
-  18: __libc_start_call_main
-  19: __libc_start_main_alias_2
-  20: _start
-   0.084909178s  INFO prepare_target{force=false package_id=reader v0.1.4 target="reader"}: cargo::core::compiler::fingerprint: fingerprint error for reader v0.1.4/Check { test: false }/TargetInner { ..: lib_target("reader", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reader-0.1.4/src/lib.rs", Edition2018) }
-   0.084915740s  INFO prepare_target{force=false package_id=reader v0.1.4 target="reader"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/reader-910c0a40cbd1fdb1/lib-reader`
+   0.074797578s  INFO prepare_target{force=false package_id=reader v0.1.4 target="reader"}: cargo::core::compiler::fingerprint: fingerprint error for reader v0.1.4/Check { test: false }/TargetInner { ..: lib_target("reader", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reader-0.1.4/src/lib.rs", Edition2018) }
+   0.074803760s  INFO prepare_target{force=false package_id=reader v0.1.4 target="reader"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/reader-910c0a40cbd1fdb1/lib-reader`
 
 Caused by:
     No such file or directory (os error 2)
@@ -248,8 +220,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.084997223s  INFO prepare_target{force=false package_id=reqwest v0.11.27 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint error for reqwest v0.11.27/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("reqwest", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.11.27/src/lib.rs", Edition2021) }
-   0.085002634s  INFO prepare_target{force=false package_id=reqwest v0.11.27 target="reqwest"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/reqwest-167cb9d02a9ef3ef/lib-reqwest`
+   0.074883900s  INFO prepare_target{force=false package_id=reqwest v0.11.27 target="reqwest"}: cargo::core::compiler::fingerprint: fingerprint error for reqwest v0.11.27/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("reqwest", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/reqwest-0.11.27/src/lib.rs", Edition2021) }
+   0.074889451s  INFO prepare_target{force=false package_id=reqwest v0.11.27 target="reqwest"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/reqwest-167cb9d02a9ef3ef/lib-reqwest`
 
 Caused by:
     No such file or directory (os error 2)
@@ -275,8 +247,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.085461356s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint: fingerprint error for base64 v0.21.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("base64", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.21.7/src/lib.rs", Edition2018) }
-   0.085467929s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/base64-b3fbc7545ef4ee5f/lib-base64`
+   0.075279544s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint: fingerprint error for base64 v0.21.7/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("base64", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/base64-0.21.7/src/lib.rs", Edition2018) }
+   0.075285576s  INFO prepare_target{force=false package_id=base64 v0.21.7 target="base64"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/base64-b3fbc7545ef4ee5f/lib-base64`
 
 Caused by:
     No such file or directory (os error 2)
@@ -303,8 +275,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.085611348s  INFO prepare_target{force=false package_id=encoding_rs v0.8.35 target="encoding_rs"}: cargo::core::compiler::fingerprint: fingerprint error for encoding_rs v0.8.35/Check { test: false }/TargetInner { ..: lib_target("encoding_rs", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding_rs-0.8.35/src/lib.rs", Edition2018) }
-   0.085617490s  INFO prepare_target{force=false package_id=encoding_rs v0.8.35 target="encoding_rs"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/encoding_rs-36a194939a3409d9/lib-encoding_rs`
+   0.075426370s  INFO prepare_target{force=false package_id=encoding_rs v0.8.35 target="encoding_rs"}: cargo::core::compiler::fingerprint: fingerprint error for encoding_rs v0.8.35/Check { test: false }/TargetInner { ..: lib_target("encoding_rs", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding_rs-0.8.35/src/lib.rs", Edition2018) }
+   0.075432462s  INFO prepare_target{force=false package_id=encoding_rs v0.8.35 target="encoding_rs"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/encoding_rs-36a194939a3409d9/lib-encoding_rs`
 
 Caused by:
     No such file or directory (os error 2)
@@ -331,8 +303,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.085770588s  INFO prepare_target{force=false package_id=futures-util v0.3.32 target="futures_util"}: cargo::core::compiler::fingerprint: fingerprint error for futures-util v0.3.32/Check { test: false }/TargetInner { ..: lib_target("futures_util", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.32/src/lib.rs", Edition2018) }
-   0.085776839s  INFO prepare_target{force=false package_id=futures-util v0.3.32 target="futures_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/futures-util-95cfdd11b7cf3561/lib-futures_util`
+   0.075578376s  INFO prepare_target{force=false package_id=futures-util v0.3.32 target="futures_util"}: cargo::core::compiler::fingerprint: fingerprint error for futures-util v0.3.32/Check { test: false }/TargetInner { ..: lib_target("futures_util", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.32/src/lib.rs", Edition2018) }
+   0.075584447s  INFO prepare_target{force=false package_id=futures-util v0.3.32 target="futures_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/futures-util-95cfdd11b7cf3561/lib-futures_util`
 
 Caused by:
     No such file or directory (os error 2)
@@ -359,8 +331,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.085960595s  INFO prepare_target{force=false package_id=h2 v0.3.27 target="h2"}: cargo::core::compiler::fingerprint: fingerprint error for h2 v0.3.27/Check { test: false }/TargetInner { ..: lib_target("h2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/h2-0.3.27/src/lib.rs", Edition2018) }
-   0.085966476s  INFO prepare_target{force=false package_id=h2 v0.3.27 target="h2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/h2-89a7451ac7adb3fb/lib-h2`
+   0.075758805s  INFO prepare_target{force=false package_id=h2 v0.3.27 target="h2"}: cargo::core::compiler::fingerprint: fingerprint error for h2 v0.3.27/Check { test: false }/TargetInner { ..: lib_target("h2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/h2-0.3.27/src/lib.rs", Edition2018) }
+   0.075764596s  INFO prepare_target{force=false package_id=h2 v0.3.27 target="h2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/h2-89a7451ac7adb3fb/lib-h2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -387,8 +359,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.086224531s  INFO prepare_target{force=false package_id=http v0.2.12 target="http"}: cargo::core::compiler::fingerprint: fingerprint error for http v0.2.12/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("http", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-0.2.12/src/lib.rs", Edition2018) }
-   0.086230673s  INFO prepare_target{force=false package_id=http v0.2.12 target="http"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/http-d40f12793aa3f086/lib-http`
+   0.076071002s  INFO prepare_target{force=false package_id=http v0.2.12 target="http"}: cargo::core::compiler::fingerprint: fingerprint error for http v0.2.12/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("http", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-0.2.12/src/lib.rs", Edition2018) }
+   0.076077594s  INFO prepare_target{force=false package_id=http v0.2.12 target="http"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/http-d40f12793aa3f086/lib-http`
 
 Caused by:
     No such file or directory (os error 2)
@@ -416,8 +388,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.086339457s  INFO prepare_target{force=false package_id=indexmap v2.14.0 target="indexmap"}: cargo::core::compiler::fingerprint: fingerprint error for indexmap v2.14.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("indexmap", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.0/src/lib.rs", Edition2024) }
-   0.086345308s  INFO prepare_target{force=false package_id=indexmap v2.14.0 target="indexmap"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/indexmap-a74f95dbb7998d8d/lib-indexmap`
+   0.076186139s  INFO prepare_target{force=false package_id=indexmap v2.14.0 target="indexmap"}: cargo::core::compiler::fingerprint: fingerprint error for indexmap v2.14.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("indexmap", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/indexmap-2.14.0/src/lib.rs", Edition2024) }
+   0.076191819s  INFO prepare_target{force=false package_id=indexmap v2.14.0 target="indexmap"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/indexmap-a74f95dbb7998d8d/lib-indexmap`
 
 Caused by:
     No such file or directory (os error 2)
@@ -445,8 +417,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.086552327s  INFO prepare_target{force=false package_id=tokio v1.52.1 target="tokio"}: cargo::core::compiler::fingerprint: fingerprint error for tokio v1.52.1/Check { test: false }/TargetInner { ..: lib_target("tokio", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.1/src/lib.rs", Edition2021) }
-   0.086558669s  INFO prepare_target{force=false package_id=tokio v1.52.1 target="tokio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-5b9e92d4cd2b2b90/lib-tokio`
+   0.076391004s  INFO prepare_target{force=false package_id=tokio v1.52.1 target="tokio"}: cargo::core::compiler::fingerprint: fingerprint error for tokio v1.52.1/Check { test: false }/TargetInner { ..: lib_target("tokio", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.52.1/src/lib.rs", Edition2021) }
+   0.076397626s  INFO prepare_target{force=false package_id=tokio v1.52.1 target="tokio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-5b9e92d4cd2b2b90/lib-tokio`
 
 Caused by:
     No such file or directory (os error 2)
@@ -474,8 +446,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.086785957s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
-   0.086791507s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/libc-43163bb6a06953a0/lib-libc`
+   0.076613803s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint: fingerprint error for libc v0.2.186/Check { test: false }/TargetInner { ..: lib_target("libc", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/libc-0.2.186/src/lib.rs", Edition2021) }
+   0.076619283s  INFO prepare_target{force=false package_id=libc v0.2.186 target="libc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/libc-43163bb6a06953a0/lib-libc`
 
 Caused by:
     No such file or directory (os error 2)
@@ -504,8 +476,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.086994268s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint: fingerprint error for mio v1.2.0/Check { test: false }/TargetInner { ..: lib_target("mio", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mio-1.2.0/src/lib.rs", Edition2021) }
-   0.087000630s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/mio-388771f5b34bbfb6/lib-mio`
+   0.076807727s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint: fingerprint error for mio v1.2.0/Check { test: false }/TargetInner { ..: lib_target("mio", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mio-1.2.0/src/lib.rs", Edition2021) }
+   0.076813939s  INFO prepare_target{force=false package_id=mio v1.2.0 target="mio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/mio-388771f5b34bbfb6/lib-mio`
 
 Caused by:
     No such file or directory (os error 2)
@@ -534,8 +506,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.087111248s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot v0.12.5/Check { test: false }/TargetInner { ..: lib_target("parking_lot", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot-0.12.5/src/lib.rs", Edition2021) }
-   0.087116448s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/parking_lot-470a245348af842f/lib-parking_lot`
+   0.076919247s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot v0.12.5/Check { test: false }/TargetInner { ..: lib_target("parking_lot", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot-0.12.5/src/lib.rs", Edition2021) }
+   0.076924677s  INFO prepare_target{force=false package_id=parking_lot v0.12.5 target="parking_lot"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/parking_lot-470a245348af842f/lib-parking_lot`
 
 Caused by:
     No such file or directory (os error 2)
@@ -564,8 +536,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.087277300s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot_core v0.9.12/Check { test: false }/TargetInner { ..: lib_target("parking_lot_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/src/lib.rs", Edition2021) }
-   0.087283492s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/parking_lot_core-9575c7a2d0456a3b/lib-parking_lot_core`
+   0.077073567s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint: fingerprint error for parking_lot_core v0.9.12/Check { test: false }/TargetInner { ..: lib_target("parking_lot_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/parking_lot_core-0.9.12/src/lib.rs", Edition2021) }
+   0.077079468s  INFO prepare_target{force=false package_id=parking_lot_core v0.9.12 target="parking_lot_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/parking_lot_core-9575c7a2d0456a3b/lib-parking_lot_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -595,8 +567,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.087530697s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook-registry v1.4.8/Check { test: false }/TargetInner { ..: lib_target("signal_hook_registry", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-registry-1.4.8/src/lib.rs", Edition2015) }
-   0.087537660s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/signal-hook-registry-032f0fb6d1763dcf/lib-signal_hook_registry`
+   0.077315632s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint: fingerprint error for signal-hook-registry v1.4.8/Check { test: false }/TargetInner { ..: lib_target("signal_hook_registry", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/signal-hook-registry-1.4.8/src/lib.rs", Edition2015) }
+   0.077322625s  INFO prepare_target{force=false package_id=signal-hook-registry v1.4.8 target="signal_hook_registry"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/signal-hook-registry-032f0fb6d1763dcf/lib-signal_hook_registry`
 
 Caused by:
     No such file or directory (os error 2)
@@ -625,8 +597,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.087647466s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint: fingerprint error for errno v0.3.14/Check { test: false }/TargetInner { ..: lib_target("errno", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/errno-0.3.14/src/lib.rs", Edition2018) }
-   0.087652916s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/errno-7b8d4364f677b15a/lib-errno`
+   0.077425719s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint: fingerprint error for errno v0.3.14/Check { test: false }/TargetInner { ..: lib_target("errno", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/errno-0.3.14/src/lib.rs", Edition2018) }
+   0.077431019s  INFO prepare_target{force=false package_id=errno v0.3.14 target="errno"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/errno-7b8d4364f677b15a/lib-errno`
 
 Caused by:
     No such file or directory (os error 2)
@@ -656,8 +628,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.087752323s  INFO prepare_target{force=false package_id=socket2 v0.6.3 target="socket2"}: cargo::core::compiler::fingerprint: fingerprint error for socket2 v0.6.3/Check { test: false }/TargetInner { ..: lib_target("socket2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.6.3/src/lib.rs", Edition2021) }
-   0.087757713s  INFO prepare_target{force=false package_id=socket2 v0.6.3 target="socket2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/socket2-3ad324fe32bfdff3/lib-socket2`
+   0.077521840s  INFO prepare_target{force=false package_id=socket2 v0.6.3 target="socket2"}: cargo::core::compiler::fingerprint: fingerprint error for socket2 v0.6.3/Check { test: false }/TargetInner { ..: lib_target("socket2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.6.3/src/lib.rs", Edition2021) }
+   0.077526979s  INFO prepare_target{force=false package_id=socket2 v0.6.3 target="socket2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/socket2-3ad324fe32bfdff3/lib-socket2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -686,8 +658,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.087851019s  INFO prepare_target{force=false package_id=tokio-macros v2.7.0 target="tokio_macros"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-macros v2.7.0/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("tokio_macros", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-macros-2.7.0/src/lib.rs", Edition2021) }
-   0.087856750s  INFO prepare_target{force=false package_id=tokio-macros v2.7.0 target="tokio_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-macros-5c93293a14485559/lib-tokio_macros`
+   0.077613502s  INFO prepare_target{force=false package_id=tokio-macros v2.7.0 target="tokio_macros"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-macros v2.7.0/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("tokio_macros", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-macros-2.7.0/src/lib.rs", Edition2021) }
+   0.077619043s  INFO prepare_target{force=false package_id=tokio-macros v2.7.0 target="tokio_macros"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-macros-5c93293a14485559/lib-tokio_macros`
 
 Caused by:
     No such file or directory (os error 2)
@@ -716,8 +688,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.087975483s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
-   0.087981113s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/proc-macro2-a14d594ae1526dc8/lib-proc_macro2`
+   0.077729510s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint: fingerprint error for proc-macro2 v1.0.106/Build/TargetInner { ..: lib_target("proc_macro2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.106/src/lib.rs", Edition2021) }
+   0.077734730s  INFO prepare_target{force=false package_id=proc-macro2 v1.0.106 target="proc_macro2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/proc-macro2-a14d594ae1526dc8/lib-proc_macro2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -747,8 +719,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.088206868s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
-   0.088213030s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/quote-80f7df8638af40bb/lib-quote`
+   0.077950085s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint: fingerprint error for quote v1.0.45/Build/TargetInner { ..: lib_target("quote", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/quote-1.0.45/src/lib.rs", Edition2021) }
+   0.077955886s  INFO prepare_target{force=false package_id=quote v1.0.45 target="quote"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/quote-80f7df8638af40bb/lib-quote`
 
 Caused by:
     No such file or directory (os error 2)
@@ -778,8 +750,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.088407776s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
-   0.088414869s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/syn-730becc4fc0e2a60/lib-syn`
+   0.078135573s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint: fingerprint error for syn v2.0.117/Build/TargetInner { ..: lib_target("syn", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/syn-2.0.117/src/lib.rs", Edition2021) }
+   0.078141775s  INFO prepare_target{force=false package_id=syn v2.0.117 target="syn"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/syn-730becc4fc0e2a60/lib-syn`
 
 Caused by:
     No such file or directory (os error 2)
@@ -809,8 +781,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.088561996s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-util v0.7.18/Check { test: false }/TargetInner { ..: lib_target("tokio_util", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.18/src/lib.rs", Edition2021) }
-   0.088568408s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-util-859572bbec6710dd/lib-tokio_util`
+   0.078269235s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-util v0.7.18/Check { test: false }/TargetInner { ..: lib_target("tokio_util", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.18/src/lib.rs", Edition2021) }
+   0.078274805s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-util-859572bbec6710dd/lib-tokio_util`
 
 Caused by:
     No such file or directory (os error 2)
@@ -838,8 +810,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.088941299s  INFO prepare_target{force=false package_id=http-body v0.4.6 target="http_body"}: cargo::core::compiler::fingerprint: fingerprint error for http-body v0.4.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("http_body", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-0.4.6/src/lib.rs", Edition2018) }
-   0.088948212s  INFO prepare_target{force=false package_id=http-body v0.4.6 target="http_body"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/http-body-c6ba3aef57f44172/lib-http_body`
+   0.078618021s  INFO prepare_target{force=false package_id=http-body v0.4.6 target="http_body"}: cargo::core::compiler::fingerprint: fingerprint error for http-body v0.4.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("http_body", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/http-body-0.4.6/src/lib.rs", Edition2018) }
+   0.078624623s  INFO prepare_target{force=false package_id=http-body v0.4.6 target="http_body"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/http-body-c6ba3aef57f44172/lib-http_body`
 
 Caused by:
     No such file or directory (os error 2)
@@ -866,8 +838,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.089073397s  INFO prepare_target{force=false package_id=hyper v0.14.32 target="hyper"}: cargo::core::compiler::fingerprint: fingerprint error for hyper v0.14.32/Check { test: false }/TargetInner { ..: lib_target("hyper", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-0.14.32/src/lib.rs", Edition2018) }
-   0.089081643s  INFO prepare_target{force=false package_id=hyper v0.14.32 target="hyper"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/hyper-da648e51f9a5fd33/lib-hyper`
+   0.078745079s  INFO prepare_target{force=false package_id=hyper v0.14.32 target="hyper"}: cargo::core::compiler::fingerprint: fingerprint error for hyper v0.14.32/Check { test: false }/TargetInner { ..: lib_target("hyper", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-0.14.32/src/lib.rs", Edition2018) }
+   0.078751021s  INFO prepare_target{force=false package_id=hyper v0.14.32 target="hyper"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/hyper-da648e51f9a5fd33/lib-hyper`
 
 Caused by:
     No such file or directory (os error 2)
@@ -894,8 +866,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.089400783s  INFO prepare_target{force=false package_id=futures-channel v0.3.32 target="futures_channel"}: cargo::core::compiler::fingerprint: fingerprint error for futures-channel v0.3.32/Check { test: false }/TargetInner { ..: lib_target("futures_channel", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-channel-0.3.32/src/lib.rs", Edition2018) }
-   0.089407586s  INFO prepare_target{force=false package_id=futures-channel v0.3.32 target="futures_channel"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/futures-channel-56433f3725f46280/lib-futures_channel`
+   0.079241082s  INFO prepare_target{force=false package_id=socket2 v0.5.10 target="socket2"}: cargo::core::compiler::fingerprint: fingerprint error for socket2 v0.5.10/Check { test: false }/TargetInner { ..: lib_target("socket2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.10/src/lib.rs", Edition2021) }
+   0.079247885s  INFO prepare_target{force=false package_id=socket2 v0.5.10 target="socket2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/socket2-0b7f845f6e69e0a5/lib-socket2`
 
 Caused by:
     No such file or directory (os error 2)
@@ -923,124 +895,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.089539894s  INFO prepare_target{force=false package_id=httparse v1.10.1 target="httparse"}: cargo::core::compiler::fingerprint: fingerprint error for httparse v1.10.1/Check { test: false }/TargetInner { benched: false, ..: lib_target("httparse", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httparse-1.10.1/src/lib.rs", Edition2018) }
-   0.089546346s  INFO prepare_target{force=false package_id=httparse v1.10.1 target="httparse"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/httparse-1b9cdd965347005e/lib-httparse`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::cli::main
-  14: cargo::main
-  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  16: std::rt::lang_start::<()>::{closure#0}
-  17: std::rt::lang_start_internal
-  18: main
-  19: __libc_start_call_main
-  20: __libc_start_main_alias_2
-  21: _start
-   0.089757483s  INFO prepare_target{force=false package_id=httpdate v1.0.3 target="httpdate"}: cargo::core::compiler::fingerprint: fingerprint error for httpdate v1.0.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("httpdate", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/httpdate-1.0.3/src/lib.rs", Edition2021) }
-   0.089763996s  INFO prepare_target{force=false package_id=httpdate v1.0.3 target="httpdate"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/httpdate-c6960634647f09ad/lib-httpdate`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::cli::main
-  14: cargo::main
-  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  16: std::rt::lang_start::<()>::{closure#0}
-  17: std::rt::lang_start_internal
-  18: main
-  19: __libc_start_call_main
-  20: __libc_start_main_alias_2
-  21: _start
-   0.090092343s  INFO prepare_target{force=false package_id=socket2 v0.5.10 target="socket2"}: cargo::core::compiler::fingerprint: fingerprint error for socket2 v0.5.10/Check { test: false }/TargetInner { ..: lib_target("socket2", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.10/src/lib.rs", Edition2021) }
-   0.090098134s  INFO prepare_target{force=false package_id=socket2 v0.5.10 target="socket2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/socket2-0b7f845f6e69e0a5/lib-socket2`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::cli::main
-  14: cargo::main
-  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  16: std::rt::lang_start::<()>::{closure#0}
-  17: std::rt::lang_start_internal
-  18: main
-  19: __libc_start_call_main
-  20: __libc_start_main_alias_2
-  21: _start
-   0.090221516s  INFO prepare_target{force=false package_id=tower-service v0.3.3 target="tower_service"}: cargo::core::compiler::fingerprint: fingerprint error for tower-service v0.3.3/Check { test: false }/TargetInner { ..: lib_target("tower_service", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs", Edition2018) }
-   0.090227767s  INFO prepare_target{force=false package_id=tower-service v0.3.3 target="tower_service"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tower-service-f28ef386221794f9/lib-tower_service`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::cli::main
-  14: cargo::main
-  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  16: std::rt::lang_start::<()>::{closure#0}
-  17: std::rt::lang_start_internal
-  18: main
-  19: __libc_start_call_main
-  20: __libc_start_main_alias_2
-  21: _start
-   0.090380204s  INFO prepare_target{force=false package_id=hyper-rustls v0.24.2 target="hyper_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-rustls v0.24.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hyper_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-rustls-0.24.2/src/lib.rs", Edition2021) }
-   0.090386766s  INFO prepare_target{force=false package_id=hyper-rustls v0.24.2 target="hyper_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/hyper-rustls-d44d844358a960bd/lib-hyper_rustls`
+   0.079452810s  INFO prepare_target{force=false package_id=hyper-rustls v0.24.2 target="hyper_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for hyper-rustls v0.24.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hyper_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hyper-rustls-0.24.2/src/lib.rs", Edition2021) }
+   0.079459984s  INFO prepare_target{force=false package_id=hyper-rustls v0.24.2 target="hyper_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/hyper-rustls-d44d844358a960bd/lib-hyper_rustls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1067,8 +923,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.090652496s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.21.12/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.21.12/src/lib.rs", Edition2021) }
-   0.090662324s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-e814e78eed13ddc6/lib-rustls`
+   0.079679687s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="rustls"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.21.12/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.21.12/src/lib.rs", Edition2021) }
+   0.079685638s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-e814e78eed13ddc6/lib-rustls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1096,8 +952,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.090951628s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/Check { test: false }/TargetInner { ..: lib_target("ring", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/lib.rs", Edition2021) }
-   0.090959032s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-d0ee77af7b2e15c2/lib-ring`
+   0.079889281s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/Check { test: false }/TargetInner { ..: lib_target("ring", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/src/lib.rs", Edition2021) }
+   0.079895192s  INFO prepare_target{force=false package_id=ring v0.17.14 target="ring"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-d0ee77af7b2e15c2/lib-ring`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1126,8 +982,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.091194836s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.2.17/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.17/src/lib.rs", Edition2018) }
-   0.091211767s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/getrandom-12d5ebc44b58b0b5/lib-getrandom`
+   0.080072214s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint: fingerprint error for getrandom v0.2.17/Check { test: false }/TargetInner { ..: lib_target("getrandom", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/getrandom-0.2.17/src/lib.rs", Edition2018) }
+   0.080077895s  INFO prepare_target{force=false package_id=getrandom v0.2.17 target="getrandom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/getrandom-12d5ebc44b58b0b5/lib-getrandom`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1157,8 +1013,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.091510639s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/build.rs", Edition2021) }
-   0.091520207s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-9bcf14fcf130e675/run-build-script-build-script-build`
+   0.080256661s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/build.rs", Edition2021) }
+   0.080264967s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-9bcf14fcf130e675/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1189,8 +1045,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.091620957s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/build.rs", Edition2021) }
-   0.091631487s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-b8227cbc043e822b/build-script-build-script-build`
+   0.080328516s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for ring v0.17.14/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ring-0.17.14/build.rs", Edition2021) }
+   0.080332995s  INFO prepare_target{force=false package_id=ring v0.17.14 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ring-b8227cbc043e822b/build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1221,8 +1077,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.091876317s  INFO prepare_target{force=false package_id=cc v1.2.61 target="cc"}: cargo::core::compiler::fingerprint: fingerprint error for cc v1.2.61/Build/TargetInner { ..: lib_target("cc", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cc-1.2.61/src/lib.rs", Edition2018) }
-   0.091886286s  INFO prepare_target{force=false package_id=cc v1.2.61 target="cc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/cc-d675db402efc7073/lib-cc`
+   0.080468940s  INFO prepare_target{force=false package_id=cc v1.2.61 target="cc"}: cargo::core::compiler::fingerprint: fingerprint error for cc v1.2.61/Build/TargetInner { ..: lib_target("cc", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cc-1.2.61/src/lib.rs", Edition2018) }
+   0.080474400s  INFO prepare_target{force=false package_id=cc v1.2.61 target="cc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/cc-d675db402efc7073/lib-cc`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1254,8 +1110,8 @@ Stack backtrace:
   23: __libc_start_call_main
   24: __libc_start_main_alias_2
   25: _start
-   0.092207981s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.21.12/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.21.12/build.rs", Edition2021) }
-   0.092214763s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-366195f7ecc75cfb/run-build-script-build-script-build`
+   0.080734429s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for rustls v0.21.12/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-0.21.12/build.rs", Edition2021) }
+   0.080742264s  INFO prepare_target{force=false package_id=rustls v0.21.12 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-366195f7ecc75cfb/run-build-script-build-script-build`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1285,8 +1141,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.092328427s  INFO prepare_target{force=false package_id=rustls-webpki v0.101.7 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-webpki v0.101.7/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.101.7/src/lib.rs", Edition2021) }
-   0.092334879s  INFO prepare_target{force=false package_id=rustls-webpki v0.101.7 target="webpki"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-webpki-6d6313a299e30507/lib-webpki`
+   0.080831522s  INFO prepare_target{force=false package_id=rustls-webpki v0.101.7 target="webpki"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-webpki v0.101.7/Check { test: false }/TargetInner { ..: lib_target("webpki", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-webpki-0.101.7/src/lib.rs", Edition2021) }
+   0.080837112s  INFO prepare_target{force=false package_id=rustls-webpki v0.101.7 target="webpki"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-webpki-6d6313a299e30507/lib-webpki`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1315,8 +1171,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.092492776s  INFO prepare_target{force=false package_id=sct v0.7.1 target="sct"}: cargo::core::compiler::fingerprint: fingerprint error for sct v0.7.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sct", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sct-0.7.1/src/lib.rs", Edition2021) }
-   0.092499679s  INFO prepare_target{force=false package_id=sct v0.7.1 target="sct"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/sct-c74e114594f5d2e5/lib-sct`
+   0.080968038s  INFO prepare_target{force=false package_id=sct v0.7.1 target="sct"}: cargo::core::compiler::fingerprint: fingerprint error for sct v0.7.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sct", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sct-0.7.1/src/lib.rs", Edition2021) }
+   0.080973769s  INFO prepare_target{force=false package_id=sct v0.7.1 target="sct"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/sct-c74e114594f5d2e5/lib-sct`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1345,8 +1201,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.092620366s  INFO prepare_target{force=false package_id=tokio-rustls v0.24.1 target="tokio_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-rustls v0.24.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tokio_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.24.1/src/lib.rs", Edition2018) }
-   0.092627018s  INFO prepare_target{force=false package_id=tokio-rustls v0.24.1 target="tokio_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-rustls-abeaf8f969bbc4a7/lib-tokio_rustls`
+   0.081087132s  INFO prepare_target{force=false package_id=tokio-rustls v0.24.1 target="tokio_rustls"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-rustls v0.24.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tokio_rustls", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-rustls-0.24.1/src/lib.rs", Edition2018) }
+   0.081149029s  INFO prepare_target{force=false package_id=tokio-rustls v0.24.1 target="tokio_rustls"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tokio-rustls-abeaf8f969bbc4a7/lib-tokio_rustls`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1374,8 +1230,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.092883611s  INFO prepare_target{force=false package_id=ipnet v2.12.0 target="ipnet"}: cargo::core::compiler::fingerprint: fingerprint error for ipnet v2.12.0/Check { test: false }/TargetInner { ..: lib_target("ipnet", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs", Edition2018) }
-   0.092892988s  INFO prepare_target{force=false package_id=ipnet v2.12.0 target="ipnet"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ipnet-6bf84237d9fbe45a/lib-ipnet`
+   0.081304892s  INFO prepare_target{force=false package_id=ipnet v2.12.0 target="ipnet"}: cargo::core::compiler::fingerprint: fingerprint error for ipnet v2.12.0/Check { test: false }/TargetInner { ..: lib_target("ipnet", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ipnet-2.12.0/src/lib.rs", Edition2018) }
+   0.081311183s  INFO prepare_target{force=false package_id=ipnet v2.12.0 target="ipnet"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/ipnet-6bf84237d9fbe45a/lib-ipnet`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1402,8 +1258,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.093026880s  INFO prepare_target{force=false package_id=mime v0.3.17 target="mime"}: cargo::core::compiler::fingerprint: fingerprint error for mime v0.3.17/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("mime", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mime-0.3.17/src/lib.rs", Edition2015) }
-   0.093033422s  INFO prepare_target{force=false package_id=mime v0.3.17 target="mime"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/mime-bbe8db07ed06c2a8/lib-mime`
+   0.081408897s  INFO prepare_target{force=false package_id=mime v0.3.17 target="mime"}: cargo::core::compiler::fingerprint: fingerprint error for mime v0.3.17/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("mime", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/mime-0.3.17/src/lib.rs", Edition2015) }
+   0.081414277s  INFO prepare_target{force=false package_id=mime v0.3.17 target="mime"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/mime-bbe8db07ed06c2a8/lib-mime`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1430,8 +1286,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.093157656s  INFO prepare_target{force=false package_id=rustls-pemfile v1.0.4 target="rustls_pemfile"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-pemfile v1.0.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustls_pemfile", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-pemfile-1.0.4/src/lib.rs", Edition2018) }
-   0.093164168s  INFO prepare_target{force=false package_id=rustls-pemfile v1.0.4 target="rustls_pemfile"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-pemfile-efa9cf5fb65bab50/lib-rustls_pemfile`
+   0.081527009s  INFO prepare_target{force=false package_id=rustls-pemfile v1.0.4 target="rustls_pemfile"}: cargo::core::compiler::fingerprint: fingerprint error for rustls-pemfile v1.0.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("rustls_pemfile", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rustls-pemfile-1.0.4/src/lib.rs", Edition2018) }
+   0.081532990s  INFO prepare_target{force=false package_id=rustls-pemfile v1.0.4 target="rustls_pemfile"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/rustls-pemfile-efa9cf5fb65bab50/lib-rustls_pemfile`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1458,8 +1314,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.093266981s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
-   0.093272822s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde-5933549f5a04ea75/lib-serde`
+   0.081628019s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
+   0.081633720s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde-5933549f5a04ea75/lib-serde`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1486,8 +1342,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.093542890s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint: fingerprint error for serde_derive v1.0.228/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("serde_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.228/src/lib.rs", Edition2021) }
-   0.093550444s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_derive-d9cd0edfadff1c31/lib-serde_derive`
+   0.081864253s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint: fingerprint error for serde_derive v1.0.228/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("serde_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_derive-1.0.228/src/lib.rs", Edition2021) }
+   0.081870946s  INFO prepare_target{force=false package_id=serde_derive v1.0.228 target="serde_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_derive-d9cd0edfadff1c31/lib-serde_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1515,8 +1371,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.093700566s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/src/lib.rs", Edition2021) }
-   0.093707169s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_json-3e968b66fc385b50/lib-serde_json`
+   0.082006942s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/Check { test: false }/TargetInner { ..: lib_target("serde_json", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/src/lib.rs", Edition2021) }
+   0.082012863s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="serde_json"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_json-3e968b66fc385b50/lib-serde_json`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1543,97 +1399,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.093922574s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/build.rs", Edition2021) }
-   0.093928705s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_json-8d51bbc20b87a835/run-build-script-build-script-build`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::custom_build::build_work
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: cargo::core::compiler::compile
-   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   9: cargo::ops::cargo_compile::compile_ws
-  10: cargo::ops::cargo_compile::compile_with_exec
-  11: cargo::ops::cargo_compile::compile
-  12: cargo::commands::check::exec
-  13: <cargo::cli::Exec>::exec
-  14: cargo::cli::main
-  15: cargo::main
-  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  17: std::rt::lang_start::<()>::{closure#0}
-  18: std::rt::lang_start_internal
-  19: main
-  20: __libc_start_call_main
-  21: __libc_start_main_alias_2
-  22: _start
-   0.093985642s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for serde_json v1.0.149/Build/TargetInner { ..: custom_build_target("build-script-build", "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_json-1.0.149/build.rs", Edition2021) }
-   0.093989650s  INFO prepare_target{force=false package_id=serde_json v1.0.149 target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_json-edefb9472feb7895/build-script-build-script-build`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: cargo::core::compiler::compile
-   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   9: cargo::ops::cargo_compile::compile_ws
-  10: cargo::ops::cargo_compile::compile_with_exec
-  11: cargo::ops::cargo_compile::compile
-  12: cargo::commands::check::exec
-  13: <cargo::cli::Exec>::exec
-  14: cargo::cli::main
-  15: cargo::main
-  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  17: std::rt::lang_start::<()>::{closure#0}
-  18: std::rt::lang_start_internal
-  19: main
-  20: __libc_start_call_main
-  21: __libc_start_main_alias_2
-  22: _start
-   0.094112230s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint: fingerprint error for zmij v1.0.21/Check { test: false }/TargetInner { ..: lib_target("zmij", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zmij-1.0.21/src/lib.rs", Edition2021) }
-   0.094118582s  INFO prepare_target{force=false package_id=zmij v1.0.21 target="zmij"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zmij-c79b89e6aff17b11/lib-zmij`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: cargo::core::compiler::compile
-   5: cargo::core::compiler::compile
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::cli::main
-  14: cargo::main
-  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  16: std::rt::lang_start::<()>::{closure#0}
-  17: std::rt::lang_start_internal
-  18: main
-  19: __libc_start_call_main
-  20: __libc_start_main_alias_2
-  21: _start
-   0.094342203s  INFO prepare_target{force=false package_id=serde_urlencoded v0.7.1 target="serde_urlencoded"}: cargo::core::compiler::fingerprint: fingerprint error for serde_urlencoded v0.7.1/Check { test: false }/TargetInner { name_inferred: true, tested: false, ..: lib_target("serde_urlencoded", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_urlencoded-0.7.1/src/lib.rs", Edition2018) }
-   0.094349246s  INFO prepare_target{force=false package_id=serde_urlencoded v0.7.1 target="serde_urlencoded"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_urlencoded-17d1cf837cfc5a35/lib-serde_urlencoded`
+   0.082425358s  INFO prepare_target{force=false package_id=serde_urlencoded v0.7.1 target="serde_urlencoded"}: cargo::core::compiler::fingerprint: fingerprint error for serde_urlencoded v0.7.1/Check { test: false }/TargetInner { name_inferred: true, tested: false, ..: lib_target("serde_urlencoded", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_urlencoded-0.7.1/src/lib.rs", Edition2018) }
+   0.082432902s  INFO prepare_target{force=false package_id=serde_urlencoded v0.7.1 target="serde_urlencoded"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/serde_urlencoded-17d1cf837cfc5a35/lib-serde_urlencoded`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1660,8 +1427,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.094562748s  INFO prepare_target{force=false package_id=sync_wrapper v0.1.2 target="sync_wrapper"}: cargo::core::compiler::fingerprint: fingerprint error for sync_wrapper v0.1.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sync_wrapper", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sync_wrapper-0.1.2/src/lib.rs", Edition2018) }
-   0.094570021s  INFO prepare_target{force=false package_id=sync_wrapper v0.1.2 target="sync_wrapper"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/sync_wrapper-6212393cf881762f/lib-sync_wrapper`
+   0.082608492s  INFO prepare_target{force=false package_id=sync_wrapper v0.1.2 target="sync_wrapper"}: cargo::core::compiler::fingerprint: fingerprint error for sync_wrapper v0.1.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("sync_wrapper", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sync_wrapper-0.1.2/src/lib.rs", Edition2018) }
+   0.082616688s  INFO prepare_target{force=false package_id=sync_wrapper v0.1.2 target="sync_wrapper"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/sync_wrapper-6212393cf881762f/lib-sync_wrapper`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1688,8 +1455,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.094667264s  INFO prepare_target{force=false package_id=url v2.5.8 target="url"}: cargo::core::compiler::fingerprint: fingerprint error for url v2.5.8/Check { test: false }/TargetInner { ..: lib_target("url", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/url-2.5.8/src/lib.rs", Edition2018) }
-   0.094673376s  INFO prepare_target{force=false package_id=url v2.5.8 target="url"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/url-2a7cfb617a4db8d1/lib-url`
+   0.082704894s  INFO prepare_target{force=false package_id=url v2.5.8 target="url"}: cargo::core::compiler::fingerprint: fingerprint error for url v2.5.8/Check { test: false }/TargetInner { ..: lib_target("url", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/url-2.5.8/src/lib.rs", Edition2018) }
+   0.082710264s  INFO prepare_target{force=false package_id=url v2.5.8 target="url"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/url-2a7cfb617a4db8d1/lib-url`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1716,8 +1483,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.094865567s  INFO prepare_target{force=false package_id=idna v1.1.0 target="idna"}: cargo::core::compiler::fingerprint: fingerprint error for idna v1.1.0/Check { test: false }/TargetInner { doctest: false, ..: lib_target("idna", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna-1.1.0/src/lib.rs", Edition2018) }
-   0.094871979s  INFO prepare_target{force=false package_id=idna v1.1.0 target="idna"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/idna-d1d529050fe16efe/lib-idna`
+   0.082887838s  INFO prepare_target{force=false package_id=idna v1.1.0 target="idna"}: cargo::core::compiler::fingerprint: fingerprint error for idna v1.1.0/Check { test: false }/TargetInner { doctest: false, ..: lib_target("idna", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna-1.1.0/src/lib.rs", Edition2018) }
+   0.082893959s  INFO prepare_target{force=false package_id=idna v1.1.0 target="idna"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/idna-d1d529050fe16efe/lib-idna`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1745,8 +1512,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.095056406s  INFO prepare_target{force=false package_id=idna_adapter v1.2.2 target="idna_adapter"}: cargo::core::compiler::fingerprint: fingerprint error for idna_adapter v1.2.2/Check { test: false }/TargetInner { ..: lib_target("idna_adapter", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna_adapter-1.2.2/src/lib.rs", Edition2024) }
-   0.095063028s  INFO prepare_target{force=false package_id=idna_adapter v1.2.2 target="idna_adapter"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/idna_adapter-0dd96188d217b498/lib-idna_adapter`
+   0.083049021s  INFO prepare_target{force=false package_id=idna_adapter v1.2.2 target="idna_adapter"}: cargo::core::compiler::fingerprint: fingerprint error for idna_adapter v1.2.2/Check { test: false }/TargetInner { ..: lib_target("idna_adapter", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/idna_adapter-1.2.2/src/lib.rs", Edition2024) }
+   0.083055142s  INFO prepare_target{force=false package_id=idna_adapter v1.2.2 target="idna_adapter"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/idna_adapter-0dd96188d217b498/lib-idna_adapter`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1775,8 +1542,8 @@ Stack backtrace:
   20: __libc_start_call_main
   21: __libc_start_main_alias_2
   22: _start
-   0.095214112s  INFO prepare_target{force=false package_id=icu_normalizer v2.2.0 target="icu_normalizer"}: cargo::core::compiler::fingerprint: fingerprint error for icu_normalizer v2.2.0/Check { test: false }/TargetInner { ..: lib_target("icu_normalizer", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_normalizer-2.2.0/src/lib.rs", Edition2021) }
-   0.095220494s  INFO prepare_target{force=false package_id=icu_normalizer v2.2.0 target="icu_normalizer"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_normalizer-68e6bb2f4095e865/lib-icu_normalizer`
+   0.083193001s  INFO prepare_target{force=false package_id=icu_normalizer v2.2.0 target="icu_normalizer"}: cargo::core::compiler::fingerprint: fingerprint error for icu_normalizer v2.2.0/Check { test: false }/TargetInner { ..: lib_target("icu_normalizer", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_normalizer-2.2.0/src/lib.rs", Edition2021) }
+   0.083199033s  INFO prepare_target{force=false package_id=icu_normalizer v2.2.0 target="icu_normalizer"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_normalizer-68e6bb2f4095e865/lib-icu_normalizer`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1806,8 +1573,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.095453112s  INFO prepare_target{force=false package_id=icu_collections v2.2.0 target="icu_collections"}: cargo::core::compiler::fingerprint: fingerprint error for icu_collections v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_collections", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_collections-2.2.0/src/lib.rs", Edition2021) }
-   0.095460586s  INFO prepare_target{force=false package_id=icu_collections v2.2.0 target="icu_collections"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_collections-74d500ace94e8198/lib-icu_collections`
+   0.083409769s  INFO prepare_target{force=false package_id=icu_collections v2.2.0 target="icu_collections"}: cargo::core::compiler::fingerprint: fingerprint error for icu_collections v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_collections", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_collections-2.2.0/src/lib.rs", Edition2021) }
+   0.083416562s  INFO prepare_target{force=false package_id=icu_collections v2.2.0 target="icu_collections"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_collections-74d500ace94e8198/lib-icu_collections`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1838,8 +1605,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.095676141s  INFO prepare_target{force=false package_id=displaydoc v0.2.5 target="displaydoc"}: cargo::core::compiler::fingerprint: fingerprint error for displaydoc v0.2.5/Build/TargetInner { name_inferred: true, for_host: true, proc_macro: true, ..: lib_target("displaydoc", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/displaydoc-0.2.5/src/lib.rs", Edition2021) }
-   0.095682984s  INFO prepare_target{force=false package_id=displaydoc v0.2.5 target="displaydoc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/displaydoc-b100df8c108d22fb/lib-displaydoc`
+   0.083612831s  INFO prepare_target{force=false package_id=displaydoc v0.2.5 target="displaydoc"}: cargo::core::compiler::fingerprint: fingerprint error for displaydoc v0.2.5/Build/TargetInner { name_inferred: true, for_host: true, proc_macro: true, ..: lib_target("displaydoc", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/displaydoc-0.2.5/src/lib.rs", Edition2021) }
+   0.083619072s  INFO prepare_target{force=false package_id=displaydoc v0.2.5 target="displaydoc"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/displaydoc-b100df8c108d22fb/lib-displaydoc`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1871,8 +1638,8 @@ Stack backtrace:
   23: __libc_start_call_main
   24: __libc_start_main_alias_2
   25: _start
-   0.095846602s  INFO prepare_target{force=false package_id=potential_utf v0.1.5 target="potential_utf"}: cargo::core::compiler::fingerprint: fingerprint error for potential_utf v0.1.5/Check { test: false }/TargetInner { ..: lib_target("potential_utf", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/potential_utf-0.1.5/src/lib.rs", Edition2021) }
-   0.095855338s  INFO prepare_target{force=false package_id=potential_utf v0.1.5 target="potential_utf"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/potential_utf-cd557709db1769c1/lib-potential_utf`
+   0.083764215s  INFO prepare_target{force=false package_id=potential_utf v0.1.5 target="potential_utf"}: cargo::core::compiler::fingerprint: fingerprint error for potential_utf v0.1.5/Check { test: false }/TargetInner { ..: lib_target("potential_utf", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/potential_utf-0.1.5/src/lib.rs", Edition2021) }
+   0.083769946s  INFO prepare_target{force=false package_id=potential_utf v0.1.5 target="potential_utf"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/potential_utf-cd557709db1769c1/lib-potential_utf`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1904,8 +1671,8 @@ Stack backtrace:
   23: __libc_start_call_main
   24: __libc_start_main_alias_2
   25: _start
-   0.096002014s  INFO prepare_target{force=false package_id=zerovec v0.11.6 target="zerovec"}: cargo::core::compiler::fingerprint: fingerprint error for zerovec v0.11.6/Check { test: false }/TargetInner { benched: false, ..: lib_target("zerovec", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerovec-0.11.6/src/lib.rs", Edition2021) }
-   0.096008135s  INFO prepare_target{force=false package_id=zerovec v0.11.6 target="zerovec"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerovec-87165f0b66db82aa/lib-zerovec`
+   0.083911743s  INFO prepare_target{force=false package_id=zerovec v0.11.6 target="zerovec"}: cargo::core::compiler::fingerprint: fingerprint error for zerovec v0.11.6/Check { test: false }/TargetInner { benched: false, ..: lib_target("zerovec", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerovec-0.11.6/src/lib.rs", Edition2021) }
+   0.083917574s  INFO prepare_target{force=false package_id=zerovec v0.11.6 target="zerovec"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerovec-87165f0b66db82aa/lib-zerovec`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1938,8 +1705,8 @@ Stack backtrace:
   24: __libc_start_call_main
   25: __libc_start_main_alias_2
   26: _start
-   0.096208021s  INFO prepare_target{force=false package_id=yoke v0.8.2 target="yoke"}: cargo::core::compiler::fingerprint: fingerprint error for yoke v0.8.2/Check { test: false }/TargetInner { ..: lib_target("yoke", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/yoke-0.8.2/src/lib.rs", Edition2021) }
-   0.096214283s  INFO prepare_target{force=false package_id=yoke v0.8.2 target="yoke"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/yoke-05b3f7fb0caf2650/lib-yoke`
+   0.084092603s  INFO prepare_target{force=false package_id=yoke v0.8.2 target="yoke"}: cargo::core::compiler::fingerprint: fingerprint error for yoke v0.8.2/Check { test: false }/TargetInner { ..: lib_target("yoke", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/yoke-0.8.2/src/lib.rs", Edition2021) }
+   0.084098233s  INFO prepare_target{force=false package_id=yoke v0.8.2 target="yoke"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/yoke-05b3f7fb0caf2650/lib-yoke`
 
 Caused by:
     No such file or directory (os error 2)
@@ -1973,8 +1740,8 @@ Stack backtrace:
   25: __libc_start_call_main
   26: __libc_start_main_alias_2
   27: _start
-   0.096436721s  INFO prepare_target{force=false package_id=yoke-derive v0.8.2 target="yoke_derive"}: cargo::core::compiler::fingerprint: fingerprint error for yoke-derive v0.8.2/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("yoke_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/yoke-derive-0.8.2/src/lib.rs", Edition2021) }
-   0.096444155s  INFO prepare_target{force=false package_id=yoke-derive v0.8.2 target="yoke_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/yoke-derive-037532fa378a1b04/lib-yoke_derive`
+   0.084301125s  INFO prepare_target{force=false package_id=yoke-derive v0.8.2 target="yoke_derive"}: cargo::core::compiler::fingerprint: fingerprint error for yoke-derive v0.8.2/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("yoke_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/yoke-derive-0.8.2/src/lib.rs", Edition2021) }
+   0.084308198s  INFO prepare_target{force=false package_id=yoke-derive v0.8.2 target="yoke_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/yoke-derive-037532fa378a1b04/lib-yoke_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2009,8 +1776,8 @@ Stack backtrace:
   26: __libc_start_call_main
   27: __libc_start_main_alias_2
   28: _start
-   0.096653078s  INFO prepare_target{force=false package_id=synstructure v0.13.2 target="synstructure"}: cargo::core::compiler::fingerprint: fingerprint error for synstructure v0.13.2/Build/TargetInner { ..: lib_target("synstructure", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/synstructure-0.13.2/src/lib.rs", Edition2018) }
-   0.096661604s  INFO prepare_target{force=false package_id=synstructure v0.13.2 target="synstructure"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/synstructure-ce42a730ca624707/lib-synstructure`
+   0.084496542s  INFO prepare_target{force=false package_id=synstructure v0.13.2 target="synstructure"}: cargo::core::compiler::fingerprint: fingerprint error for synstructure v0.13.2/Build/TargetInner { ..: lib_target("synstructure", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/synstructure-0.13.2/src/lib.rs", Edition2018) }
+   0.084502664s  INFO prepare_target{force=false package_id=synstructure v0.13.2 target="synstructure"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/synstructure-ce42a730ca624707/lib-synstructure`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2046,8 +1813,8 @@ Stack backtrace:
   27: __libc_start_call_main
   28: __libc_start_main_alias_2
   29: _start
-   0.096841803s  INFO prepare_target{force=false package_id=zerofrom v0.1.7 target="zerofrom"}: cargo::core::compiler::fingerprint: fingerprint error for zerofrom v0.1.7/Check { test: false }/TargetInner { ..: lib_target("zerofrom", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.7/src/lib.rs", Edition2021) }
-   0.096851060s  INFO prepare_target{force=false package_id=zerofrom v0.1.7 target="zerofrom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerofrom-1642d69a081bff65/lib-zerofrom`
+   0.084635483s  INFO prepare_target{force=false package_id=zerofrom v0.1.7 target="zerofrom"}: cargo::core::compiler::fingerprint: fingerprint error for zerofrom v0.1.7/Check { test: false }/TargetInner { ..: lib_target("zerofrom", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-0.1.7/src/lib.rs", Edition2021) }
+   0.084641545s  INFO prepare_target{force=false package_id=zerofrom v0.1.7 target="zerofrom"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerofrom-1642d69a081bff65/lib-zerofrom`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2082,8 +1849,8 @@ Stack backtrace:
   26: __libc_start_call_main
   27: __libc_start_main_alias_2
   28: _start
-   0.096999319s  INFO prepare_target{force=false package_id=zerofrom-derive v0.1.7 target="zerofrom_derive"}: cargo::core::compiler::fingerprint: fingerprint error for zerofrom-derive v0.1.7/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("zerofrom_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-derive-0.1.7/src/lib.rs", Edition2021) }
-   0.097005931s  INFO prepare_target{force=false package_id=zerofrom-derive v0.1.7 target="zerofrom_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerofrom-derive-0d8bbbd1b542635d/lib-zerofrom_derive`
+   0.084773392s  INFO prepare_target{force=false package_id=zerofrom-derive v0.1.7 target="zerofrom_derive"}: cargo::core::compiler::fingerprint: fingerprint error for zerofrom-derive v0.1.7/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("zerofrom_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerofrom-derive-0.1.7/src/lib.rs", Edition2021) }
+   0.084779344s  INFO prepare_target{force=false package_id=zerofrom-derive v0.1.7 target="zerofrom_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerofrom-derive-0d8bbbd1b542635d/lib-zerofrom_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2119,8 +1886,8 @@ Stack backtrace:
   27: __libc_start_call_main
   28: __libc_start_main_alias_2
   29: _start
-   0.097190258s  INFO prepare_target{force=false package_id=zerovec-derive v0.11.3 target="zerovec_derive"}: cargo::core::compiler::fingerprint: fingerprint error for zerovec-derive v0.11.3/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("zerovec_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerovec-derive-0.11.3/src/lib.rs", Edition2021) }
-   0.097196349s  INFO prepare_target{force=false package_id=zerovec-derive v0.11.3 target="zerovec_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerovec-derive-8af2a657bb198bd9/lib-zerovec_derive`
+   0.084938463s  INFO prepare_target{force=false package_id=zerovec-derive v0.11.3 target="zerovec_derive"}: cargo::core::compiler::fingerprint: fingerprint error for zerovec-derive v0.11.3/Build/TargetInner { for_host: true, proc_macro: true, ..: lib_target("zerovec_derive", ["proc-macro"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerovec-derive-0.11.3/src/lib.rs", Edition2021) }
+   0.084946107s  INFO prepare_target{force=false package_id=zerovec-derive v0.11.3 target="zerovec_derive"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerovec-derive-8af2a657bb198bd9/lib-zerovec_derive`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2154,8 +1921,8 @@ Stack backtrace:
   25: __libc_start_call_main
   26: __libc_start_main_alias_2
   27: _start
-   0.097557047s  INFO prepare_target{force=false package_id=icu_provider v2.2.0 target="icu_provider"}: cargo::core::compiler::fingerprint: fingerprint error for icu_provider v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_provider", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_provider-2.2.0/src/lib.rs", Edition2021) }
-   0.097565503s  INFO prepare_target{force=false package_id=icu_provider v2.2.0 target="icu_provider"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_provider-62c8aa6da70c4aca/lib-icu_provider`
+   0.085252122s  INFO prepare_target{force=false package_id=icu_provider v2.2.0 target="icu_provider"}: cargo::core::compiler::fingerprint: fingerprint error for icu_provider v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_provider", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_provider-2.2.0/src/lib.rs", Edition2021) }
+   0.085258805s  INFO prepare_target{force=false package_id=icu_provider v2.2.0 target="icu_provider"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_provider-62c8aa6da70c4aca/lib-icu_provider`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2186,8 +1953,8 @@ Stack backtrace:
   22: __libc_start_call_main
   23: __libc_start_main_alias_2
   24: _start
-   0.097803631s  INFO prepare_target{force=false package_id=icu_locale_core v2.2.0 target="icu_locale_core"}: cargo::core::compiler::fingerprint: fingerprint error for icu_locale_core v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_locale_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_locale_core-2.2.0/src/lib.rs", Edition2021) }
-   0.097810323s  INFO prepare_target{force=false package_id=icu_locale_core v2.2.0 target="icu_locale_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_locale_core-3886a1728cb5791c/lib-icu_locale_core`
+   0.085487755s  INFO prepare_target{force=false package_id=icu_locale_core v2.2.0 target="icu_locale_core"}: cargo::core::compiler::fingerprint: fingerprint error for icu_locale_core v2.2.0/Check { test: false }/TargetInner { benched: false, ..: lib_target("icu_locale_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_locale_core-2.2.0/src/lib.rs", Edition2021) }
+   0.085494428s  INFO prepare_target{force=false package_id=icu_locale_core v2.2.0 target="icu_locale_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_locale_core-3886a1728cb5791c/lib-icu_locale_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2219,8 +1986,8 @@ Stack backtrace:
   23: __libc_start_call_main
   24: __libc_start_main_alias_2
   25: _start
-   0.098096932s  INFO prepare_target{force=false package_id=tinystr v0.8.3 target="tinystr"}: cargo::core::compiler::fingerprint: fingerprint error for tinystr v0.8.3/Check { test: false }/TargetInner { benched: false, ..: lib_target("tinystr", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.3/src/lib.rs", Edition2021) }
-   0.098104166s  INFO prepare_target{force=false package_id=tinystr v0.8.3 target="tinystr"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tinystr-214cb812bce516a4/lib-tinystr`
+   0.085748135s  INFO prepare_target{force=false package_id=tinystr v0.8.3 target="tinystr"}: cargo::core::compiler::fingerprint: fingerprint error for tinystr v0.8.3/Check { test: false }/TargetInner { benched: false, ..: lib_target("tinystr", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.8.3/src/lib.rs", Edition2021) }
+   0.085754657s  INFO prepare_target{force=false package_id=tinystr v0.8.3 target="tinystr"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/tinystr-214cb812bce516a4/lib-tinystr`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2253,8 +2020,8 @@ Stack backtrace:
   24: __libc_start_call_main
   25: __libc_start_main_alias_2
   26: _start
-   0.098342845s  INFO prepare_target{force=false package_id=zerotrie v0.2.4 target="zerotrie"}: cargo::core::compiler::fingerprint: fingerprint error for zerotrie v0.2.4/Check { test: false }/TargetInner { benched: false, ..: lib_target("zerotrie", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerotrie-0.2.4/src/lib.rs", Edition2021) }
-   0.098349597s  INFO prepare_target{force=false package_id=zerotrie v0.2.4 target="zerotrie"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerotrie-ebb77e568900fd69/lib-zerotrie`
+   0.085973920s  INFO prepare_target{force=false package_id=zerotrie v0.2.4 target="zerotrie"}: cargo::core::compiler::fingerprint: fingerprint error for zerotrie v0.2.4/Check { test: false }/TargetInner { benched: false, ..: lib_target("zerotrie", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerotrie-0.2.4/src/lib.rs", Edition2021) }
+   0.085980131s  INFO prepare_target{force=false package_id=zerotrie v0.2.4 target="zerotrie"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/zerotrie-ebb77e568900fd69/lib-zerotrie`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2286,8 +2053,8 @@ Stack backtrace:
   23: __libc_start_call_main
   24: __libc_start_main_alias_2
   25: _start
-   0.098559702s  INFO prepare_target{force=false package_id=icu_properties v2.2.0 target="icu_properties"}: cargo::core::compiler::fingerprint: fingerprint error for icu_properties v2.2.0/Check { test: false }/TargetInner { ..: lib_target("icu_properties", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_properties-2.2.0/src/lib.rs", Edition2021) }
-   0.098566926s  INFO prepare_target{force=false package_id=icu_properties v2.2.0 target="icu_properties"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_properties-b6f1b3d8d5d89635/lib-icu_properties`
+   0.086158587s  INFO prepare_target{force=false package_id=icu_properties v2.2.0 target="icu_properties"}: cargo::core::compiler::fingerprint: fingerprint error for icu_properties v2.2.0/Check { test: false }/TargetInner { ..: lib_target("icu_properties", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/icu_properties-2.2.0/src/lib.rs", Edition2021) }
+   0.086164488s  INFO prepare_target{force=false package_id=icu_properties v2.2.0 target="icu_properties"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/icu_properties-b6f1b3d8d5d89635/lib-icu_properties`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2317,8 +2084,8 @@ Stack backtrace:
   21: __libc_start_call_main
   22: __libc_start_main_alias_2
   23: _start
-   0.098929097s  INFO prepare_target{force=false package_id=webpki-roots v0.25.4 target="webpki_roots"}: cargo::core::compiler::fingerprint: fingerprint error for webpki-roots v0.25.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("webpki_roots", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/webpki-roots-0.25.4/src/lib.rs", Edition2018) }
-   0.098936200s  INFO prepare_target{force=false package_id=webpki-roots v0.25.4 target="webpki_roots"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/webpki-roots-65fbea1aba6022ad/lib-webpki_roots`
+   0.086562536s  INFO prepare_target{force=false package_id=webpki-roots v0.25.4 target="webpki_roots"}: cargo::core::compiler::fingerprint: fingerprint error for webpki-roots v0.25.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("webpki_roots", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/webpki-roots-0.25.4/src/lib.rs", Edition2018) }
+   0.086569890s  INFO prepare_target{force=false package_id=webpki-roots v0.25.4 target="webpki_roots"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/webpki-roots-65fbea1aba6022ad/lib-webpki_roots`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2345,8 +2112,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.099041879s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint: fingerprint error for time v0.3.47/Check { test: false }/TargetInner { benched: false, ..: lib_target("time", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-0.3.47/src/lib.rs", Edition2024) }
-   0.099048261s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/time-c1b6d820f6d252e1/lib-time`
+   0.086666021s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint: fingerprint error for time v0.3.47/Check { test: false }/TargetInner { benched: false, ..: lib_target("time", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-0.3.47/src/lib.rs", Edition2024) }
+   0.086671140s  INFO prepare_target{force=false package_id=time v0.3.47 target="time"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/time-c1b6d820f6d252e1/lib-time`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2372,8 +2139,8 @@ Stack backtrace:
   17: __libc_start_call_main
   18: __libc_start_main_alias_2
   19: _start
-   0.099247876s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint: fingerprint error for deranged v0.5.8/Check { test: false }/TargetInner { ..: lib_target("deranged", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/deranged-0.5.8/src/lib.rs", Edition2021) }
-   0.099254499s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/deranged-ae238ccc707011d6/lib-deranged`
+   0.086858753s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint: fingerprint error for deranged v0.5.8/Check { test: false }/TargetInner { ..: lib_target("deranged", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/deranged-0.5.8/src/lib.rs", Edition2021) }
+   0.086864724s  INFO prepare_target{force=false package_id=deranged v0.5.8 target="deranged"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/deranged-ae238ccc707011d6/lib-deranged`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2400,8 +2167,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.099419579s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint: fingerprint error for powerfmt v0.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("powerfmt", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/powerfmt-0.2.0/src/lib.rs", Edition2021) }
-   0.099425600s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/powerfmt-508ad2610f69c509/lib-powerfmt`
+   0.087012722s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint: fingerprint error for powerfmt v0.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("powerfmt", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/powerfmt-0.2.0/src/lib.rs", Edition2021) }
+   0.087018483s  INFO prepare_target{force=false package_id=powerfmt v0.2.0 target="powerfmt"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/powerfmt-508ad2610f69c509/lib-powerfmt`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2429,8 +2196,8 @@ Stack backtrace:
   19: __libc_start_call_main
   20: __libc_start_main_alias_2
   21: _start
-   0.099526981s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint: fingerprint error for num-conv v0.2.1/Check { test: false }/TargetInner { ..: lib_target("num_conv", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-conv-0.2.1/src/lib.rs", Edition2021) }
-   0.099535056s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/num-conv-e07f5ea6bdabea76/lib-num_conv`
+   0.087109725s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint: fingerprint error for num-conv v0.2.1/Check { test: false }/TargetInner { ..: lib_target("num_conv", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/num-conv-0.2.1/src/lib.rs", Edition2021) }
+   0.087115275s  INFO prepare_target{force=false package_id=num-conv v0.2.1 target="num_conv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/num-conv-e07f5ea6bdabea76/lib-num_conv`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2457,8 +2224,8 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.099633902s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint: fingerprint error for time-core v0.1.8/Check { test: false }/TargetInner { ..: lib_target("time_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.8/src/lib.rs", Edition2024) }
-   0.099639983s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/time-core-a081218f0c6f840b/lib-time_core`
+   0.087200205s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint: fingerprint error for time-core v0.1.8/Check { test: false }/TargetInner { ..: lib_target("time_core", ["lib"], "/home/will/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/time-core-0.1.8/src/lib.rs", Edition2024) }
+   0.087205174s  INFO prepare_target{force=false package_id=time-core v0.1.8 target="time_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/time-core-a081218f0c6f840b/lib-time_core`
 
 Caused by:
     No such file or directory (os error 2)
@@ -2485,97 +2252,4 @@ Stack backtrace:
   18: __libc_start_call_main
   19: __libc_start_main_alias_2
   20: _start
-   0.099786058s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: fingerprint error for obsidianfm v0.1.0 (/home/will/git/obsidianfm)/Check { test: true }/TargetInner { name: "obsidianfm", doc: true, ..: with_path("/home/will/git/obsidianfm/src/main.rs", Edition2024) }
-   0.099792440s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/will/git/obsidianfm/target/debug/.fingerprint/obsidianfm-e06d1230670e0dc8/test-bin-obsidianfm`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::io::error::Error as anyhow::context::ext::StdError>::ext_context::<alloc::string::String>
-   1: cargo_util::paths::read
-   2: cargo::core::compiler::fingerprint::prepare_target
-   3: cargo::core::compiler::compile
-   4: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   5: cargo::ops::cargo_compile::compile_ws
-   6: cargo::ops::cargo_compile::compile_with_exec
-   7: cargo::ops::cargo_compile::compile
-   8: cargo::commands::check::exec
-   9: <cargo::cli::Exec>::exec
-  10: cargo::cli::main
-  11: cargo::main
-  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  13: std::rt::lang_start::<()>::{closure#0}
-  14: std::rt::lang_start_internal
-  15: main
-  16: __libc_start_call_main
-  17: __libc_start_main_alias_2
-  18: _start
-   Compiling proc-macro2 v1.0.106
-   Compiling cc v1.2.61
-    Checking libc v0.2.186
-    Checking serde_core v1.0.228
-    Checking http v0.2.12
-    Checking futures-util v0.3.32
-    Checking indexmap v2.14.0
-    Checking httparse v1.10.1
-    Checking futures-channel v0.3.32
-    Checking httpdate v1.0.3
-   Compiling serde_json v1.0.149
-    Checking tower-service v0.3.3
-    Checking ryu v1.0.23
-    Checking zmij v1.0.21
-   Compiling anyhow v1.0.102
-    Checking powerfmt v0.2.0
-    Checking base64 v0.21.7
-    Checking csv-core v0.1.13
-    Checking deranged v0.5.8
-    Checking encoding_rs v0.8.35
-    Checking rustls-pemfile v1.0.4
-    Checking num-conv v0.2.1
-   Compiling quote v1.0.45
-    Checking webpki-roots v0.25.4
-    Checking ipnet v2.12.0
-    Checking sync_wrapper v0.1.2
-   Compiling syn v2.0.117
-    Checking http-body v0.4.6
-    Checking time-core v0.1.8
-    Checking mime v0.3.17
-    Checking reader v0.1.4
-   Compiling ring v0.17.14
-    Checking errno v0.3.14
-    Checking parking_lot_core v0.9.12
-    Checking getrandom v0.2.17
-    Checking socket2 v0.6.3
-    Checking mio v1.2.0
-    Checking socket2 v0.5.10
-    Checking signal-hook-registry v1.4.8
-    Checking parking_lot v0.12.5
-    Checking time v0.3.47
-    Checking csv v1.4.0
-   Compiling rustls v0.21.12
-   Compiling synstructure v0.13.2
-    Checking rustls-webpki v0.101.7
-    Checking sct v0.7.1
-   Compiling zerofrom-derive v0.1.7
-   Compiling yoke-derive v0.8.2
-   Compiling zerovec-derive v0.11.3
-   Compiling displaydoc v0.2.5
-   Compiling tokio-macros v2.7.0
-   Compiling serde_derive v1.0.228
-    Checking tokio v1.52.1
-    Checking zerofrom v0.1.7
-    Checking yoke v0.8.2
-    Checking zerovec v0.11.6
-    Checking zerotrie v0.2.4
-    Checking tinystr v0.8.3
-    Checking potential_utf v0.1.5
-    Checking icu_collections v2.2.0
-    Checking icu_locale_core v2.2.0
-    Checking serde v1.0.228
-    Checking icu_provider v2.2.0
-    Checking icu_properties v2.2.0
-    Checking icu_normalizer v2.2.0
-    Checking serde_urlencoded v0.7.1
-    Checking idna_adapter v1.2.2
-    Checking idna v1.1.0
+   0.087349536s  INFO prepare_target{force=false package_id=obsidianfm v0.1.0 (/home/will/git/obsidianfm) target="obsidianfm"}: cargo::core::compiler::fingerprint: fingerprint error for obsidianfm v0.1.0 (/home/will/git/obsidianfm)/Check { test: true }/TargetInner { name: "obsidianfm", doc: true, ..: with_path("/home/will/git/obsidianfm/src/main.rs", Edition2024) }

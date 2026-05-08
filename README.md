@@ -9,3 +9,56 @@
 ##### todo
 * cli to deploy it into a vault (trying to get it to be more mature before its "usable")
 * Access MusicBrainz for genres (they're good enough imo)
+
+## Flake
+
+This repo now exposes:
+
+* `packages.<system>.default`
+* `apps.<system>.default`
+* `devShells.<system>.default`
+* `nixosModules.default`
+
+Example NixOS usage:
+
+```nix
+{
+  inputs.obsidianfm.url = "github:yourname/obsidianfm";
+
+  outputs = { self, nixpkgs, obsidianfm, ... }: {
+    nixosConfigurations.server = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        obsidianfm.nixosModules.default
+        {
+          services.obsidianfm = {
+            enable = true;
+            createUser = false;
+            user = "navidrome";
+            group = "navidrome";
+            csvPath = "/var/lib/obsidianfm/data.csv";
+            vaultRoot = "/srv/obsidianfm-vault";
+            pollSeconds = 30;
+
+            navidrome.baseUrl = "http://127.0.0.1:4533";
+            navidrome.user = "nix";
+            navidrome.passwordFile = "/run/secrets/navidrome-password";
+          };
+        }
+      ];
+    };
+  };
+}
+```
+
+Runtime configuration is exposed through environment variables as well:
+
+* `OBSIDIANFM_CSV_PATH`
+* `OBSIDIANFM_VAULT_ROOT`
+* `OBSIDIANFM_NAVIDROME_BASE_URL`
+* `OBSIDIANFM_NAVIDROME_USER`
+* `OBSIDIANFM_NAVIDROME_PASSWORD`
+* `OBSIDIANFM_NAVIDROME_PASSWORD_FILE`
+* `OBSIDIANFM_POLL_SECS`
+
+The service user needs write access to both the CSV path and the vault root.

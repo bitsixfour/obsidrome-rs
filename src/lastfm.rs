@@ -5,13 +5,10 @@ use anyhow::{Context, Result};
 use serde::Deserialize;
 use tokio::time;
 
-use crate::csv::{self, NewScrobble};
-
-const CSV_PATH: &str = "data.csv";
-const NAVIDROME_USER: &str = "nix";
-const NAVIDROME_PASSWORD: &str = "2008";
-const NAVIDROME_BASE_URL: &str = "http://192.168.1.20:8097";
-const POLL_SECS: u64 = 30;
+use crate::{
+    config::AppConfig,
+    csv::{self, NewScrobble},
+};
 
 #[derive(Debug, Deserialize)]
 pub struct NavidromeResponse {
@@ -69,10 +66,10 @@ impl From<&NewScrobble> for ScrobbleKey {
     }
 }
 
-async fn fetch_now_playing() -> Result<NavidromeResponse> {
+async fn fetch_now_playing(config: &AppConfig) -> Result<NavidromeResponse> {
     let url = format!(
         "{}/rest/getNowPlaying?u={}&p={}&v=1.16.1&c=scrobbler&f=json",
-        NAVIDROME_BASE_URL, NAVIDROME_USER, NAVIDROME_PASSWORD
+        config.navidrome_base_url, config.navidrome_user, config.navidrome_password
     );
 
     reqwest::get(url)
@@ -83,11 +80,18 @@ async fn fetch_now_playing() -> Result<NavidromeResponse> {
         .context("failed to deserialize Navidrome response")
 }
 
-fn csv_contains_scrobble(scrobble: &NewScrobble) -> Result<bool> {
-    let file = match OpenOptions::new().read(true).open(CSV_PATH) {
+fn csv_contains_scrobble(config: &AppConfig, scrobble: &NewScrobble) -> Result<bool> {
+    let file = match OpenOptions::new().read(true).open(&config.csv_path) {
         Ok(file) => file,
         Err(error) if error.kind() == std::io::ErrorKind::NotFound => return Ok(false),
-        Err(error) => return Err(error).context("failed to open data.csv for duplicate check"),
+        Err(error) => {
+            return Err(error).with_context(|| {
+                format!(
+                    "failed to open {} for duplicate check",
+                    config.csv_path.display()
+                )
+            })
+        }
     };
 
     let mut reader = ::csv::ReaderBuilder::new()
@@ -109,17 +113,21 @@ fn csv_contains_scrobble(scrobble: &NewScrobble) -> Result<bool> {
     }))
 }
 
-fn is_duplicate(scrobble: &NewScrobble, last_scrobble: Option<&ScrobbleKey>) -> Result<bool> {
+fn is_duplicate(
+    config: &AppConfig,
+    scrobble: &NewScrobble,
+    last_scrobble: Option<&ScrobbleKey>,
+) -> Result<bool> {
     let key = ScrobbleKey::from(scrobble);
     if last_scrobble == Some(&key) {
         return Ok(true);
     }
 
-    csv_contains_scrobble(scrobble)
+    csv_contains_scrobble(config, scrobble)
 }
 
-async fn tick(last_scrobble: &mut Option<ScrobbleKey>) -> Result<()> {
-    let navidrome = fetch_now_playing().await?;
+async fn tick(config: &AppConfig, last_scrobble: &mut Option<ScrobbleKey>) -> Result<()> {
+    let navidrome = fetch_now_playing(config).await?;
     let entry = match navidrome
         .subsonic_response
         .now_playing
@@ -135,7 +143,7 @@ async fn tick(last_scrobble: &mut Option<ScrobbleKey>) -> Result<()> {
 
     let scrobble = entry.as_scrobble();
     let key = ScrobbleKey::from(&scrobble);
-    if is_duplicate(&scrobble, last_scrobble.as_ref())? {
+    if is_duplicate(config, &scrobble, last_scrobble.as_ref())? {
         println!(
             "duplicate -> skipping ({} / {} / {} / {})",
             scrobble.artist, scrobble.album, scrobble.song, scrobble.played_at
@@ -144,8 +152,8 @@ async fn tick(last_scrobble: &mut Option<ScrobbleKey>) -> Result<()> {
         return Ok(());
     }
 
-    csv::append_scrobble(&scrobble, CSV_PATH)?;
-    csv::write_scrobble_markdown(CSV_PATH).await?;
+    csv::append_scrobble(&scrobble, &config.csv_path)?;
+    csv::write_scrobble_markdown(&config.csv_path, &config.vault_root).await?;
     *last_scrobble = Some(key);
     println!(
         "scrobbled -> {},{},{},{}",
@@ -155,14 +163,14 @@ async fn tick(last_scrobble: &mut Option<ScrobbleKey>) -> Result<()> {
     Ok(())
 }
 
-pub async fn run() -> Result<()> {
-    println!("scrobbler started; polling every {}s", POLL_SECS);
-    let mut interval = time::interval(Duration::from_secs(POLL_SECS));
+pub async fn run(config: &AppConfig) -> Result<()> {
+    println!("scrobbler started; polling every {}s", config.poll_secs);
+    let mut interval = time::interval(Duration::from_secs(config.poll_secs));
     let mut last_scrobble = None;
 
     loop {
         interval.tick().await;
-        if let Err(error) = tick(&mut last_scrobble).await {
+        if let Err(error) = tick(config, &mut last_scrobble).await {
             eprintln!("scrobbler error: {:#}", error);
         }
     }
