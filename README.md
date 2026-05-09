@@ -1,5 +1,5 @@
 <img width="1516" height="993" alt="image" src="https://github.com/user-attachments/assets/d49512be-b6d5-483e-bc8f-c9cec3ce004e" />
-This is a simple project that creates markdown files from Navidrome's API which are innerconnected between genres and artists. 
+This is a simple project that creates markdown files from Navidrome's API which are innerconnected between genres and artists. You could push this to Quartz to have a cool mind map or whatever.
 
 
 ##### todo
@@ -9,7 +9,7 @@ This is a simple project that creates markdown files from Navidrome's API which 
 * Still Somewhat of a POC: still trying to make it actually useful as a tool instead of just "ooh i need my links." You could probably deploy Quartz with this instead of shilling a last.fm page?
 ## Use
 
-I wrapped this using a Nix Flake cause my servers use NixOS and also it's easiest lol. 
+I wrapped this using a Nix Flake cause my servers use NixOS and also it's easiest. 
 
 
 ```nix
