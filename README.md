@@ -14,7 +14,7 @@ I wrapped this using a Nix Flake cause my servers use NixOS and also it's easies
 
 ```nix
 {
-  inputs.obsidianfm.url = "github:yourname/obsidianfm";
+  inputs.obsidianfm.url = "github:bitsixfour/obsidianfm";
 
   outputs = { self, nixpkgs, obsidianfm, ... }: {
     nixosConfigurations.server = nixpkgs.lib.nixosSystem {
