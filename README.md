@@ -1,7 +1,7 @@
 
 This is a simple project that creates markdown files from Navidrome's API which are innerconnected between genres and artists. You could push this to Quartz to have a cool mind map or whatever.
 
-**My website's example -> https://obsidian.wngyn.net**
+My website's example -> https://obsidian.wngyn.net
 
 ##### todo
 * cli to deploy it into a vault (trying to get it to be more mature before its "usable")
